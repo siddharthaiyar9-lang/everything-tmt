@@ -1,0 +1,108 @@
+/* A "CSS Module" — class names here are automatically scoped to just
+   this component, so .link in Navbar.module.css can never accidentally
+   clash with .link in some other component's CSS file. */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: color-mix(in srgb, var(--color-bg) 90%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.logo {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  color: var(--color-text);
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.logoAccent {
+  color: var(--color-accent);
+  font-style: italic;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.link,
+.linkActive {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.link {
+  color: var(--color-text-secondary);
+}
+
+.linkActive {
+  color: var(--color-text);
+  background: color-mix(in srgb, var(--color-accent) 8%, transparent);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.iconButton,
+.mobileToggle {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  background: transparent;
+  color: var(--color-text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.mobileToggle {
+  display: none;
+}
+
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 12px;
+  border-top: 1px solid var(--color-border);
+}
+
+.mobileLink {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  padding: 10px 8px;
+}
+
+@media (max-width: 860px) {
+  .links {
+    display: none;
+  }
+  .mobileToggle {
+    display: flex;
+  }
+}

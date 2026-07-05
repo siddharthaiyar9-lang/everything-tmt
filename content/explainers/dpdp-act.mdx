@@ -1,0 +1,870 @@
+---
+title: "Digital Personal Data Protection Act, 2023"
+description: "India's dedicated data protection framework — consent, fiduciary duties, Data Principal rights, cross-border transfers, and the Data Protection Board."
+category: "Privacy"
+tags: ["DPDP Act", "Privacy", "Data Protection"]
+date: "2026-07-03"
+author: "Everything TMT Editorial"
+readingTime: "26 min read"
+---
+
+## Overview and Legislative Context
+
+Every day, we share enormous amounts of personal information online. When you create a social media account, order food through an app, book a flight, use internet banking, shop online, or visit a hospital, you are providing personal information such as your name, phone number, email address, location, financial details, and sometimes even your biometric or health information.
+
+Businesses and government agencies rely on this information to provide services efficiently. However, the widespread collection and use of personal data also creates significant risks. Personal data can be misused, stolen in data breaches, shared without an individual's knowledge, or processed for purposes they never agreed to.
+
+For many years, India did not have a comprehensive law governing how digital personal data could be collected and processed. Instead, privacy obligations were scattered across different laws, most notably the **Information Technology Act, 2000** and the **Sensitive Personal Data or Information (SPDI) Rules, 2011**, which imposed limited obligations on organisations handling certain categories of sensitive information.
+
+A dedicated data protection framework became necessary as India's digital economy expanded and the amount of personal data being processed increased dramatically.
+
+A major turning point came in **Justice K.S. Puttaswamy (Retd.) v. Union of India (2017)**, where the Supreme Court unanimously recognised the **right to privacy as a fundamental right** protected under **Article 21 of the Constitution**, which guarantees the right to life and personal liberty.
+
+The Court observed that informational privacy—the ability of individuals to exercise control over their personal information—is an essential part of that constitutional right. It also recognised that while the State and private organisations may legitimately process personal data in many situations, such processing must be supported by an appropriate legal framework that balances individual privacy with legitimate public and commercial interests.
+
+The **Digital Personal Data Protection Act, 2023 (DPDP Act)** was enacted to provide that framework.
+
+The Act regulates the processing of **digital personal data** and establishes the rights of individuals over their personal information while imposing corresponding obligations on organisations that collect and process it.
+
+Importantly, the Act applies only to **digital personal data**. It does not regulate non-personal data or personal data that exists purely in physical form and has never been digitised.
+
+The DPDP Act therefore complements, rather than replaces, the Information Technology Act. While the IT Act primarily regulates electronic records, cybersecurity, cyber offences, and digital infrastructure, the DPDP Act specifically governs how digital personal data may be collected, used, stored, shared, and erased.
+
+Together, these two statutes form the foundation of India's modern digital regulatory framework. The DPDP Act is supplemented by the **Digital Personal Data Protection Rules, 2025**, which prescribe the detailed procedures for implementing many provisions of the Act, including consent notices, Consent Managers, security safeguards, breach notifications, and the functioning of the Data Protection Board of India. Throughout this guide, relevant Rules are discussed alongside the corresponding provisions of the Act.
+
+## Guiding Principles
+
+Effective enforcement of the DPDPA is envisioned to be on the basis of 7 principles—derived from the General Data Protection Regulation ("GDPR") of the European Union:
+
+1. **Lawfulness, fairness and transparency** – essentially, the data collected should be done so in a manner that has legal backing (like with the consent of the owner of the data ("data principal")), when the processing of such data is not detrimental to the interest of the data principal and while ensuring that the data principal knows what data is being collected, and what exactly it is being used for.
+2. **Purpose Limitation** – this means that the data collected must be used only for the purpose it has been collected for. Often, this is read with the principle of "informed consent" – i.e., validity of the consent only extends to the amount of information that has been given to the data principal on the basis of which consent to collect/process data has been granted.
+3. **Data Minimisation** – this principle is read alongside the principal of "fairness." Put simply, it means that the amount of data collected for the fulfilment of a specific purpose should be limited to the minimum amount of data necessary for such purpose. For instance, a courier service would require the details of sender and receiver, as well as the address, and perhaps the account details for payment. It need not collect information such as past medical history, or any data unrelated to the service being provided.
+4. **Accuracy** – whereas not applicable universally, ensuring that whatever data is processed is accurate has been recognized as a best practice under the GDPR. Take for instance a medical professional – if the data collected and processed is inaccurate, the diagnosis (or prognosis itself) may be inaccurate, leading to potential health issues in the patient/data principal.
+5. **Storage Limitation** – in very simple terms, this means two things: (1) that the data stored should be limited strictly to the data necessarily required for the purposes of processing, and; (2) once the data has been processed, and there is no further use of it with respect to the purpose for which it has been collected, the data should be erased. This is often read with the principles of data minimisation and purpose limitation.
+6. **Integrity and Confidentiality** – integrity means ensuring that personal data remains accurate and protected from unauthorized alterations – i.e., safeguarding your systems against tampering or hacking. Confidentiality means ensuring that only authorized individuals or entities have access to and process personal data.
+
+## Commonly Used Terms in the DPDP Act
+
+Before diving into the Act, it is helpful to understand some of the key terms used throughout the legislation. These definitions appear repeatedly in later chapters, so understanding them now will make the rest of the Act much easier to follow.
+
+<Definition title="1. Data (Section 2(h))">
+
+**Data** means any representation of information, facts, concepts, opinions, or instructions that can be communicated or processed by people or computers.
+
+The definition is broadly similar to that under the Information Technology Act, 2000, although the DPDP Act adopts a simpler and more technology-neutral approach.
+
+</Definition>
+
+<Definition title="2. Data Fiduciary (Section 2(i))">
+
+A **Data Fiduciary** is any person or organisation that decides **why** and **how** personal data will be processed.
+
+This is broadly equivalent to a **data controller** under the GDPR. However, Parliament deliberately chose the word _fiduciary_ to emphasise that organisations processing personal data are expected to act responsibly and in the interests of the **Data Principal**.
+
+</Definition>
+
+<Definition title="3. Data Principal (Section 2(j))">
+
+A **Data Principal** is the individual to whom the personal data relates.
+
+If the Data Principal is a child or a person with a disability who has a lawful guardian, the parent or guardian exercises the rights available under the Act on their behalf.
+
+The GDPR uses the term **data subject**, while the DPDP Act uses **Data Principal** to emphasise that the individual remains at the centre of the data protection framework.
+
+</Definition>
+
+<Definition title="4. Processing (Section 2(x))">
+
+**Processing** refers to almost every activity that can be performed on digital personal data.
+
+It includes collecting, storing, organising, using, sharing, retrieving, modifying, erasing, or destroying personal data. In practice, almost every interaction with digital personal data amounts to processing.
+
+</Definition>
+
+<Definition title="5. Data Processor (Section 2(k))">
+
+A **Data Processor** processes personal data **on behalf of** a Data Fiduciary.
+
+Unlike a Data Fiduciary, a processor does not decide why or how the data will be used. It simply carries out the Fiduciary's instructions. If an organisation determines the purpose or manner of processing, it is a **Data Fiduciary**, regardless of what it calls itself.
+
+</Definition>
+
+<Definition title="6. Personal Data (Section 2(t))">
+
+**Personal Data** means any data about an individual who is identifiable by or in relation to that data.
+
+This is broadly similar to the concept of personal information under the earlier SPDI Rules. Although the wording is different, the definition is wide enough to cover both direct and, potentially, indirect identification depending on the context
+
+</Definition>
+
+## Part I – Lawful Processing of Personal Data
+
+One of the central questions addressed by the DPDP Act is:
+
+### When can an organisation lawfully process someone's personal data?
+
+The Act recognises **two legal bases** for processing digital personal data:
+
+1. **Consent** of the Data Principal (Section 6); and
+2. **Certain legitimate uses** specified under Section 7, where consent is not required.
+
+As a general rule, organisations should obtain the Data Principal's consent before processing personal data. However, Parliament recognised that there are situations where obtaining consent would be impractical or unnecessary—for example, during medical emergencies or when processing is required by law.
+
+## Consent (Section 6)
+
+Consent is the primary basis for processing personal data under the DPDP Act.
+
+The Act treats consent as an informed agreement between the **Data Principal** and the **Data Fiduciary**. Before collecting personal data, the Fiduciary must provide a **consent notice** explaining what data will be collected, why it is being collected, and how it will be used.
+
+This ensures that individuals can make an informed decision before agreeing to the processing of their personal data. Under Rule 3, DPDP Rules 2025 require consent notices to:
+
+- be presented separately from other terms and conditions;
+- clearly explain what personal data is being collected and why; and
+- provide an accessible mechanism through which Data Principals can withdraw consent, exercise their rights, and raise grievances.
+
+These requirements strengthen the transparency obligations already contained in the Act.
+
+### What makes consent valid?
+
+For consent to be valid under the DPDP Act, it must be:
+
+### Free and informed
+
+The Data Principal should understand:
+
+- what personal data is being collected;
+- why it is being collected; and
+- how it will be used.
+
+Consent should also be given voluntarily. A person should have a genuine choice, except where refusing consent would naturally make it impossible to provide the requested service.
+
+### Specific, unconditional and unambiguous
+
+Consent must relate to a **specific purpose**.
+
+A general or vague statement allowing an organisation to use personal data for "any purpose" would not satisfy the Act.
+
+Similarly, consent should be communicated through a clear and affirmative action that leaves no doubt about the individual's intention.
+
+### Given by a competent person
+
+Where the Data Principal is:
+
+- a child; or
+- a person with a disability who has a lawful guardian,
+
+consent must be given by the parent or lawful guardian, as required under the Act.
+
+### Consistent with the law
+
+Consent cannot make an unlawful activity lawful.
+
+For example, a person cannot validly consent to giving up statutory rights provided under the DPDP Act, such as the right to seek grievance redressal.
+
+### Revocable
+
+Perhaps the most important feature of consent is that it can be withdrawn.
+
+The DPDP Act requires that **withdrawing consent should be as easy as giving it.**
+
+Once consent is withdrawn, the Data Fiduciary must stop processing the personal data unless another legal basis under the Act permits continued processing.
+
+### Clear Affirmative Action
+
+The DPDP Act requires consent to be given through a **clear affirmative action**.
+
+Although the Act does not define this expression, it generally means that the individual's conduct must clearly indicate agreement.
+
+Examples include:
+
+- clicking an "I Agree" button;
+- ticking an unchecked consent box; or
+- digitally signing a consent form.
+
+Silence, inactivity, or pre-ticked boxes would ordinarily not satisfy this requirement.
+
+### Consent Managers (Ss. 6(7)-(9) and Rule 4)
+
+CMs act as a single point of contact to enable a Data Principal to give, manage, review and withdraw her consent. They are accountable to the Data Principal and shall be registered as per requirements notified. They are also responsible to ensure Principal's grievances are rectified?
+
+The Rules prescribe the registration requirements and ongoing obligations of **Consent Managers**.
+
+Among other things, Consent Managers must:
+
+- provide an interoperable consent management platform;
+- maintain records of consent transactions;
+- implement appropriate security safeguards; and
+- remain subject to oversight by the Data Protection Board.
+
+## Legitimate Uses (Section 7)
+
+Although consent is the default basis for processing, the DPDP Act recognises that there are situations where requiring consent would be impractical or unnecessary.
+
+Section 7 therefore permits processing without consent for certain **legitimate uses** specifically identified by the Act.
+
+These include:
+
+<Definition title="1. Voluntary provision of data">
+
+Where an individual voluntarily provides personal data for a particular purpose and does not indicate that they object to its use for that purpose.
+
+</Definition>
+
+<Definition title="2. Government benefits and services">
+
+Where the State processes personal data to provide subsidies, benefits, licences, certificates, permits, or similar services, provided the statutory conditions are satisfied.
+
+### DPDP Rules Government Processing (Rule 5)
+
+Where the Government processes personal data for providing subsidies, benefits, licences, permits, or similar public services, the Rules require compliance with standards relating to:
+
+- purpose limitation;
+- data minimisation;
+- access controls; and
+- audit trails.
+
+These safeguards are intended to ensure that Government processing remains accountable while enabling efficient delivery of public services.
+
+</Definition>
+
+<Definition title="3. Performance of legal or sovereign functions">
+
+Where processing is necessary for functions authorised by law or for protecting India's sovereignty, integrity, or security.
+
+</Definition>
+
+<Definition title="4. Compliance with legal obligations">
+
+Where another law requires personal data to be disclosed to the Government or another authorised authority.
+
+</Definition>
+
+<Definition title="5. Compliance with judicial or quasi-judicial orders">
+
+Where processing is necessary to comply with judgments, decrees, or orders issued by courts or other legally authorised bodies.
+
+</Definition>
+
+<Definition title="6. Medical emergencies">
+
+Where processing is necessary to respond to an immediate threat to the life or health of the Data Principal or another person.
+
+</Definition>
+
+<Definition title="7. Public health">
+
+Where processing is required to provide medical treatment or respond to epidemics, disease outbreaks, or other public health emergencies.
+
+</Definition>
+
+<Definition title="8. Disaster management">
+
+Where processing is necessary to protect individuals or provide assistance during disasters or breakdowns of public order.
+
+</Definition>
+
+<Definition title="9. Employment">
+
+Where processing is reasonably necessary for employment-related purposes, including protecting confidential information, intellectual property, trade secrets, or providing employment-related services and benefits.
+
+### Why does Section 7 matter?
+
+Section 7 recognises that a consent-based model cannot operate in every situation.
+
+For example, a hospital treating an unconscious accident victim cannot realistically wait for consent before accessing essential medical information. Similarly, Government agencies may need to process personal data to discharge statutory functions or comply with court orders.
+
+Rather than creating a broad exception, Section 7 lists specific situations where processing without consent is permitted. Outside these situations, organisations must ordinarily rely on another lawful basis—most commonly, the Data Principal's consent.
+
+### International Perspective
+
+The idea behind Section 7 is broadly comparable to the **"lawful bases for processing"** recognised under the **GDPR**, particularly the concept of **legitimate interests** under Article 6.
+
+However, the two frameworks are not identical.
+
+The GDPR provides a broad and flexible legitimate interests ground that is balanced against the rights of the data subject. By contrast, the DPDP Act adopts a more structured approach by specifying an exhaustive list of situations in which processing without consent is permitted. In other words, the DPDP Act specifies a limited number of circumstances where data can be collected and processed without consent, but the GDPR allows flexibility subject to reasonableness.
+
+As Indian courts interpret Section 7, principles such as **necessity**, **proportionality**, and **purpose limitation** are likely to play an important role in determining whether a particular use genuinely falls within one of these statutory exceptions.
+
+</Definition>
+## PART II: DUTIES OF DATA FIDUCIARIES
+
+### General Obligations
+
+Apart from the consent-related obligations – i.e., ensuring that consent on the basis of which data is processed is valid, data fiduciaries are expected to follow a set of principles at the time of processing. Heavy reliance has been placed on the 7 principles (discussed in Legislative Context).
+
+1. **Lawful and Fair Processing (Section 4, 5(1)):** A data fiduciary must process personal data only in a lawful and fair manner, in line with the provisions of the DPDPA. For instance. a payment app cannot collect a user's Aadhaar number unless it is required for a legally valid purpose under the Act. Before processing, a clear and accessible notice must be provided to the data principal detailing the purpose of processing, rights available, and grievance redressal mechanisms. For instance, a ride-hailing app must show a privacy notice before account creation explaining why location data is collected.
+
+When compared with GDPR Article 5(1)(a) on "lawfulness, fairness, and transparency," with CJEU judgments, we observe that lawfulness requires a processing activity to be "strictly necessary" for its stated purpose. In Mousse v. SNCF (C-394/23), a French train company would ask customers to input their preferred honorifics (Ms./Mr./Mrs. etc.) to purchase tickets. The court ruled that this practice violated the GDPR because collecting the title was not "objectively indispensable" for fulfilling the contract of selling a ticket.
+
+1. **Purpose Limitation (Section 6(1)):** Personal data must be collected and processed only for clear, specific, and lawful purposes communicated to the data principal at or before the time of collection. For example, an e-commerce website cannot collect phone numbers "for delivery updates" and then use them for marketing without fresh consent. It is impossible to look at this in isolation with principles of lawfulness discussed. The draft Digital Personal Data Protection Rules, 2025 ("Draft Rules") which were published by the Indian government on January 3, 2025 incorporated this – specifically that the notice accompanying the consent request should clearly specify the exact purposes for which the personal data will be processed and provide an itemized list of the goods and services that will be offered using the collected information.
+2. **Storage Limitation (Section 8(7)):** Personal data must not be retained for longer than necessary to fulfil the stated purpose, unless longer retention is required by law. For instance, a hospital cannot retain a patient's contact details indefinitely if they are no longer needed for follow-up or compliance.
+
+The Digi Case (C-77/21) analyses the limits of purpose limitation and storage limitation. The specific question that emerged was whether the creation of a parallel database of data collected (legitimately) amount to a violation of the principles of purpose limitation and/or storage limitation as per the GDPR? The CJEU determined that:
+
+a) Under Article 5(1)(b) GDPR, storing personal data in a separate "test" database for purposes such as running tests and fixing errors counts as "further processing." This is allowed if the new purpose is compatible with the original purpose for which the data was collected. Compatibility must be assessed using the criteria in Article 6(4) GDPR, such as the link between the original and new purposes, the context of collection, the nature of the data, potential effects on individuals, and safeguards in place. In this case, testing and error correction were closely linked to fulfilling subscription contracts and aligned with customers' reasonable expectations, so the storage could be compatible.
+
+b) Under Article 5(1)(e) GDPR, personal data can only be kept for as long as necessary for the purposes for which it is processed. Even if processing is initially lawful, keeping the data beyond what is needed breaches the "storage limitation" principle. In this case, if test data were not deleted after tests and corrections were complete, the retention period exceeded what was necessary, violating the rule, regardless of whether the over-retention was due to oversight.
+
+1. **Data Minimisation (Section 6(1)):** Only the minimum amount of personal data necessary for the intended purpose should be collected. For example. a job application portal should not require a candidate's PAN number if it is not essential for the recruitment process. Generally, the principle of lawfulness and transparency can be used to better understand this concept.
+2. **Accuracy of Data (Section 8(3)):** Reasonable steps must be taken to ensure that the personal data processed is complete, accurate, and up-to-date. For instance, a university should have a mechanism for students to correct errors in their academic records. Inaccurate data can lead to a range of harms, from minor inconveniences to life-altering decisions. Common errors, such as a mistaken criminal record, could prevent someone from getting a job, or an incorrect medical diagnosis could lead to improper treatment. In a highly interconnected and data-driven world, where personal information is constantly shared and used for automated decision-making, the potential for harm from inaccurate data is amplified.
+3. **Security Safeguards and Breach Reporting (Section 8(5), 8(6)):** Reasonable technical and organisational measures must be taken to protect personal data from breaches, unauthorised access, disclosure, alteration, or destruction. For instance, a fintech company must encrypt sensitive customer data both in transit and at rest. Furthermore, in the event of a breach, the data fiduciary shall be obligated to report the breach to the affected party and the Data Protection Board of India.
+4. **Accountability (Section 8(1)):** Data fiduciaries must be able to demonstrate compliance with all provisions of the DPDPA, including maintaining necessary records and cooperating with the Data Protection Board. For instance, a social media platform should maintain logs of when and how consent was obtained from users. The provision itself states that the data fiduciary "shall be responsible for complying with the provisions of this Act" and "shall be able to demonstrate such compliance" through reasonable efforts. The obligations for data fiduciaries listed in Sections 8(3), 8(5), and 8(6) are all duties that stem from this overarching principle of accountability.
+5. **Processing by Data Processors:** When engaging a processor, the fiduciary must ensure that processing is done under a valid contract and in compliance with the DPDPA, while retaining overall responsibility. For instance, a bank outsourcing its KYC process must ensure the vendor follows the bank's data protection standards.
+
+## Obligations Regarding Children's Data (Section 9)
+
+The Digital Personal Data Protection Act, 2023 ("DPDPA") places heightened obligations on data fiduciaries when processing the personal data of children. A "child" is defined under Section 2(f) as any person who has not attained the age of eighteen years, aligning the threshold with the Majority Act, 1875. This means that no person under 18 can lawfully provide consent for the processing of their personal data – the law requires verifiable parental consent before any such processing begins.
+
+Under Section 9(1), a data fiduciary must obtain such verifiable consent and must not process children's personal data in any way that is:
+
+- Detrimental to the well-being of the child, or
+- For purposes of tracking, behavioural monitoring, or targeted advertising.
+
+For instance, a gaming app directed at teenagers cannot track in-game chat patterns to push microtransactions based on perceived spending habits. Similarly, an educational platform cannot repurpose student data for personalised product marketing.
+
+The Draft Rules elaborate on this obligation in Rule 10, which requires "appropriate technical and organisational measures" to ensure that parental consent is genuine. These include verification through (a) reliable identity and age details already available with the fiduciary, or (b) a virtual token linked to the parent's identity and age proof. While these methods draw inspiration from the U.S. Children's Online Privacy Protection Act ("COPPA"), they are narrower than the flexible menu of options under COPPA, which includes video calls, signed forms, toll-free calls, or secure ID checks.
+
+India's strict "under 18" standard creates what scholars call an "age autonomy paradox," i.e., while adolescents (16–17) may understand and wish to control their data, the law effectively replaces their consent with that of a parent. This can perpetuate data immaturity, where young people reach adulthood without having exercised meaningful control over their data. Moreover, the dynamic nature of children's data (e.g., health metrics, academic performance) means that inaccuracies can arise quickly, leading to long-term effects if outdated data is used for profiling or decision-making.
+
+From a compliance standpoint, fiduciaries should adopt a risk-based approach. For services aimed primarily at children or processing their data at scale, the reintroduction of a "Guardian Data Fiduciary" classification (as first proposed in the Personal Data Protection Bill, 2019) could set higher accountability thresholds, including prohibitions on profiling, enhanced transparency obligations, and regular audits. Supplementing this with a Data Trust Score system would help parents and regulators assess an organisation's child data protection record in a simple, transparent manner.
+
+For example, a children's ed-tech platform processing millions of student profiles would qualify as a high-risk fiduciary under such a model. Beyond obtaining parental consent, it would be required to:
+
+- Implement age-appropriate interfaces and notices,
+- Allow joint parent–child control for certain features (e.g., content sharing), and
+- Regularly refresh stored data to ensure accuracy.
+
+## Significant Data Fiduciaries (Section 10)
+
+Under Section 10 of the DPDPA, the Central Government may notify certain data fiduciaries or classes of data fiduciaries as "Significant Data Fiduciaries" based on factors such as:
+
+- Volume and sensitivity of personal data processed
+- Risk of harm to data principals
+- Potential impact on sovereignty, integrity, and security of India
+- Risk to electoral democracy
+- Use of new technologies such as AI and machine learning
+- Any other prescribed factor
+
+Example: A large fintech platform processing millions of biometric KYC records using AI-based fraud detection could be designated as an SDF due to the high sensitivity, scale, and potential risks involved.
+
+### Obligations of SDFs
+
+1. **Data Protection Impact Assessments ("DPIAs"):** Before undertaking high-risk processing, an SDF must conduct a DPIA to evaluate the potential harm to data principals and outline measures to mitigate such risks. A DPIA involves outlining the rights available to the data principal (including cross-referencing with the type of data collected and the manner in which it is processed), then outlining risk and risk management methods.
+2. **Periodic Data Audits:** SDFs must undergo independent data audits to ensure compliance with the DPDPA and to identify gaps in data protection practices.
+3. **Appointment of a Data Protection Officer ("DPO"):** An SDF must appoint a DPO who is based in India and serves as the primary point of contact for grievance redressal and coordination with the Data Protection Board.
+4. **Record-Keeping Obligations:** SDFs are required to maintain detailed records of data processing activities, security measures implemented, and risk mitigation actions taken.
+5. **Enhanced Compliance Measures:** SDFs may be subject to additional measures as prescribed by the Central Government, including stricter breach reporting timelines or mandatory security certifications.
+
+### DPDP Rules, 2025 – Reasonable Security Safeguards (Rule 6)
+
+To comply with the Act, Data Fiduciaries are expected to implement appropriate technical and organisational security measures.
+
+The Rules specifically refer to safeguards such as:
+
+- encryption, masking, tokenisation, or similar protective techniques;
+- access controls;
+- monitoring and logging;
+- backup and disaster recovery measures; and
+- contractual security obligations for Data Processors.
+
+These measures help reduce the risk of unauthorised access and personal data breaches.
+
+### DPDP Rules, 2025 – Personal Data Breach Notification (Rule 7)
+
+Where a personal data breach occurs, the Rules prescribe the procedure for notifying:
+
+- the affected Data Principal; and
+- the Data Protection Board of India.
+
+Prompt notification enables individuals to take protective measures while allowing the Board to supervise the response to the breach.
+
+## Part III – Rights and Duties of the Data Principal
+
+One of the biggest changes introduced by the DPDP Act is that it places individuals at the centre of India's data protection framework.
+
+Rather than treating people as passive providers of information, the Act gives **Data Principals** a number of enforceable rights over their personal data. At the same time, it imposes certain responsibilities to ensure that these rights are exercised fairly and responsibly.
+
+### Rights of the Data Principal
+
+<Definition title="1. Right to Access Information (Section 11)">
+
+A Data Principal has the right to know whether a Data Fiduciary is processing their personal data.
+
+Upon request, the Data Fiduciary must provide:
+
+- confirmation that personal data is being processed;
+- a summary of the personal data being processed;
+- the processing activities being carried out; and
+- the identities or categories of third parties with whom the data has been shared, unless an exemption applies.
+
+This right promotes transparency by allowing individuals to understand how their personal data is being used.
+
+**International Perspective:** Unlike the GDPR, which generally requires a copy of the personal data being processed, the DPDP Act requires only a **summary**. Whether this provides an equivalent level of access may ultimately be clarified by Indian courts.
+
+</Definition>
+
+<Definition title="2. Right to Correction and Erasure (Section 12)">
+
+A Data Principal may request the correction of personal data that is inaccurate, incomplete, or misleading.
+
+They may also request the erasure of personal data once:
+
+- the purpose for which it was collected has been fulfilled; or
+- consent has been withdrawn,
+
+unless another law requires the data to be retained.
+
+This provision reflects the broader idea that individuals should not have their personal data retained indefinitely once there is no lawful reason for continued processing.
+
+<Note label="Note">
+
+The right to erasure is different from the **"right to be forgotten"** recognised in some jurisdictions. While Indian courts have recognised aspects of this principle in cases such as _Jorawar Singh Mundy v. Union of India_, they have also emphasised that it cannot automatically override principles such as open justice or the public availability of judicial records.
+
+</Note>
+
+</Definition>
+
+<Definition title="3. Right to Grievance Redressal (Section 13)">
+
+Every Data Fiduciary must establish an accessible grievance redressal mechanism.
+
+If a Data Principal is dissatisfied with how their personal data has been handled, they must first approach the Data Fiduciary.
+
+If the grievance is not resolved within the prescribed time, the Data Principal may escalate the matter to the **Data Protection Board of India (DPBI).**
+
+This creates a two-tier system for resolving privacy disputes.
+
+</Definition>
+
+<Definition title="4. Right to Nominate (Section 14)">
+
+The DPDP Act introduces a unique right that is absent from many international privacy laws.
+
+A Data Principal may nominate another person to exercise their rights under the Act in the event of:
+
+- death;
+- unsoundness of mind; or
+- physical incapacity.
+
+The detailed procedure for making and recording nominations will be prescribed by the Government.
+
+</Definition>
+
+<Definition title="5. Right to Withdraw Consent">
+
+Where personal data is processed on the basis of consent, the Data Principal may withdraw that consent at any time.
+
+The withdrawal of consent must be as easy as giving it.
+
+This right has already been discussed in detail in the chapter on **Consent**.
+
+</Definition>
+
+## Duties of the Data Principal (Section 15)
+
+Unlike many privacy laws around the world, the DPDP Act also imposes certain duties on Data Principals.
+
+These duties are intended to ensure that the rights provided under the Act are exercised responsibly.
+
+A Data Principal must:
+
+- not file false or frivolous complaints;
+- not impersonate another person while exercising rights under the Act;
+- not suppress material information in dealings under the Act; and
+- ensure that requests for correction or erasure are supported by accurate and genuine information.
+
+Failure to comply with these duties may attract a **civil penalty of up to ₹10,000**.
+
+Although this penalty is relatively modest compared to the significant penalties that may be imposed on Data Fiduciaries, it reflects Parliament's intention that data protection should involve responsibilities as well as rights.
+
+## Part IV – Cross-Border Transfer of Personal Data
+
+One of the most significant features of the DPDP Act is that it generally **allows personal data to be transferred outside India.**
+
+Unlike earlier policy proposals that favoured data localisation, the DPDP Act adopts a more flexible approach. It recognises that businesses increasingly rely on global cloud services, international vendors, and cross-border data processing.
+
+However, this freedom is **not unlimited**.
+
+## Section 16 – The Negative List Approach
+
+Section 16 empowers the **Central Government** to restrict the transfer of personal data to specific countries or territories.
+
+Instead of specifying where data **may** be transferred, the Act specifies where it **may not** be transferred.
+
+This is commonly referred to as a **negative list** approach.
+
+In practical terms:
+
+### Data can generally be transferred anywhere unless the Government specifically prohibits transfers to a particular country or territory.
+
+The Government may impose such restrictions where it considers that transfers to a particular jurisdiction pose risks to privacy, national security, or other public interests.
+
+### Other laws continue to apply
+
+Section 16 also makes it clear that the DPDP Act does not override stricter sector-specific laws.
+
+For example, regulators such as:
+
+- the **Reserve Bank of India (RBI)**;
+- the **Securities and Exchange Board of India (SEBI)**; or
+- other statutory authorities,
+
+may continue to impose additional restrictions on transferring certain categories of data outside India.
+
+Organisations must therefore comply not only with the DPDP Act but also with any applicable sector-specific requirements.
+
+### Why did India choose this model?
+
+The negative list reflects India's attempt to balance **privacy** with **economic growth**.
+
+Because transfers are generally permitted unless specifically restricted:
+
+- businesses can more easily use global cloud services;
+- multinational companies can process data across jurisdictions;
+- compliance costs are reduced; and
+- India remains an attractive destination for digital services and outsourcing.
+
+At the same time, the Government retains the ability to prohibit transfers where serious risks arise.
+
+### Challenges with the negative list
+
+Although the approach makes cross-border business easier, it has attracted some criticism.
+
+First, businesses may face uncertainty if a country is added to the negative list after commercial arrangements have already been made.
+
+Secondly, the system is largely **reactive**.
+
+Unless the Government identifies a risk and issues a restriction, personal data may continue flowing to jurisdictions that have relatively weak privacy protections.
+
+### Does the DPDP Act apply outside India?
+
+Yes.
+
+Under **Section 3**, the DPDP Act applies not only to the processing of digital personal data within India, but also to processing that takes place **outside India** where it relates to offering goods or services to individuals located in India.
+
+This gives the Act an **extraterritorial** scope similar to many modern privacy laws.
+
+In theory, organisations outside India that process the personal data of individuals in India may also be required to comply with the Act.
+
+In practice, however, enforcement may be more difficult where the organisation has no business presence or assets within India.
+
+### India vs the European Union
+
+India's approach differs significantly from that adopted under the **European Union's General Data Protection Regulation (GDPR).**
+
+The GDPR follows what is commonly known as a **positive list** or **adequacy** approach.
+
+Instead of allowing transfers by default, the **European Commission** first determines whether another country provides an **adequate level of data protection**.
+
+Only countries that satisfy this assessment may generally receive personal data without additional safeguards.
+
+Where no adequacy decision exists, organisations must rely on alternative mechanisms such as:
+
+- **Standard Contractual Clauses (SCCs);** or
+- **Binding Corporate Rules (BCRs)** for multinational corporate groups.
+
+As a result, the GDPR generally imposes stricter conditions on international data transfers than the DPDP Act.
+
+### Lessons from the GDPR
+
+The European approach has been shaped by several landmark decisions of the **Court of Justice of the European Union (CJEU)**, particularly the **Schrems I** and **Schrems II** cases.
+
+These decisions emphasised that personal data should not be transferred to countries where individuals do not receive protection broadly equivalent to that guaranteed under EU law.
+
+Although the DPDP Act adopts a different model, these cases highlight an important principle:
+
+Cross-border transfers should balance the free flow of data with adequate protection for individual privacy.
+
+As India's data protection framework develops, similar questions regarding government surveillance, international data transfers, and equivalent levels of protection may eventually arise before Indian courts.
+
+### Why this matters
+
+Cross-border data transfers have become essential to the modern digital economy.
+
+Every time a business stores information on an overseas cloud server, uses an international payment processor, or relies on a foreign customer support centre, personal data may cross national borders.
+
+The DPDP Act adopts a business-friendly approach by permitting such transfers in most situations while allowing the Government to restrict transfers to jurisdictions that present significant risks.
+
+This represents a shift away from earlier discussions around strict data localisation and towards a more flexible model of regulating international data flows.
+
+## Part V – Exemptions under the DPDP Act
+
+The DPDP Act generally requires organisations to comply with its obligations whenever they process digital personal data. However, Parliament recognised that applying the same rules in every situation may not always be practical or desirable.
+
+Section 17 therefore creates a number of **limited exemptions**, allowing certain persons or organisations to process personal data without complying with some of the Act's requirements.
+
+Importantly, these exemptions do **not** place organisations completely outside the scope of the Act. In many cases, important obligations—such as implementing reasonable security safeguards—continue to apply.
+
+<Definition title="1. Legal and Regulatory Functions">
+
+Certain public authorities may process personal data without complying with all the obligations under the Act where the processing is necessary for:
+
+- enforcing legal rights or claims;
+- judicial or quasi-judicial proceedings;
+- regulatory functions; or
+- supervisory functions authorised by law.
+
+This ensures that courts, tribunals, and regulatory authorities can perform their statutory duties without being hindered by procedural requirements designed for ordinary commercial processing.
+
+</Definition>
+
+<Definition title="2. Law Enforcement">
+
+The Act also provides exemptions where personal data is processed for:
+
+- preventing offences;
+- detecting offences;
+- investigating offences; or
+- prosecuting offences.
+
+Without this exemption, law enforcement agencies could face significant practical difficulties in conducting criminal investigations that require access to personal data.
+
+</Definition>
+
+<Definition title="3. Cross-Border Outsourcing">
+
+India is a major global destination for outsourcing and data processing services.
+
+Accordingly, the Act provides an exemption where:
+
+- personal data belongs to individuals located outside India; and
+- the data is processed in India under a contract with a foreign entity.
+
+This allows Indian companies to process foreign personal data without automatically becoming subject to the rights and obligations that the Act grants to Data Principals in India.
+
+</Definition>
+
+<Definition title="4. Corporate Restructuring">
+
+Personal data may also be processed as part of legitimate corporate restructuring exercises, including:
+
+- mergers;
+- amalgamations;
+- demergers;
+- reconstructions; and
+- transfers of undertakings,
+
+where such transactions have been approved by a competent court, tribunal, or other lawful authority.
+
+This exemption facilitates commercial transactions by allowing organisations to conduct legal and financial due diligence without obtaining fresh consent from every affected individual.
+
+</Definition>
+
+<Definition title="5. Recovery of Financial Defaults">
+
+The Act permits the processing of personal data for the purpose of recovering financial information relating to loan defaulters by registered financial institutions, provided the processing complies with the applicable financial laws.
+
+This allows financial institutions to manage credit risk and recover outstanding debts while continuing to operate within the broader legal framework governing financial information.
+
+</Definition>
+
+<Definition title="6. National Security">
+
+One of the broadest exemptions under the Act relates to national security.
+
+The Central Government may exempt notified State instrumentalities where processing is necessary in the interests of:
+
+- the sovereignty and integrity of India;
+- the security of the State;
+- friendly relations with foreign States;
+- public order; or
+- preventing incitement to cognisable offences.
+
+This recognises that certain governmental functions cannot always operate within the ordinary consent-based framework established by the Act.
+
+</Definition>
+
+<Definition title="7. Research, Statistics and Archiving">
+
+The Act also exempts certain processing carried out for:
+
+- scientific research;
+- statistical purposes; or
+- archiving in the public interest,
+
+provided the processing satisfies the conditions prescribed under the Act and is not used to make decisions affecting identifiable individuals.
+
+These exemptions seek to encourage research and public-interest projects while limiting the impact on individual privacy.
+
+</Definition>
+
+<Definition title="8. Exemptions for Certain Classes of Data Fiduciaries">
+
+The Central Government may notify specific classes of Data Fiduciaries that receive limited relaxations from certain compliance obligations.
+
+Depending on the notification, these relaxations may include exemptions from requirements relating to:
+
+- consent notices;
+- data accuracy;
+- storage limitation;
+- Significant Data Fiduciary obligations; and
+- the right of access.
+
+The objective is to reduce compliance burdens where applying every obligation may not be necessary or proportionate.
+
+</Definition>
+
+<Definition title="9. Government Processing">
+
+Where the State or one of its instrumentalities processes personal data for the performance of its lawful functions, certain obligations—such as storage limitation and, in some situations, the right to erasure or correction—may not apply.
+
+This recognises that Government agencies often have statutory duties requiring them to retain records for extended periods.
+
+### Why do these exemptions matter?
+
+The DPDP Act seeks to balance two competing objectives.
+
+On the one hand, it gives individuals significant control over their personal data.
+
+On the other hand, it recognises that certain activities—such as criminal investigations, judicial proceedings, disaster response, scientific research, and national security—cannot always operate within a strict consent-based framework.
+
+The exemptions in Section 17 attempt to strike that balance by limiting the application of particular obligations in carefully defined situations.
+
+### International Perspective
+
+Most modern privacy laws contain similar exemptions.
+
+For example, **Article 23 of the GDPR** permits Member States to restrict certain rights and obligations where necessary to protect interests such as national security, defence, public security, criminal investigations, or judicial proceedings.
+
+However, the GDPR generally requires such restrictions to satisfy the principles of **necessity** and **proportionality**, and to include clear safeguards against misuse.
+
+In India, these constitutional principles are likely to be informed by the Supreme Court's decision in **Justice K.S. Puttaswamy v. Union of India (2017)**, which held that restrictions on the fundamental right to privacy must pursue a legitimate objective and satisfy the test of proportionality.
+
+</Definition>
+
+## Part VI – Institutional Framework
+
+The DPDP Act does more than create rights and obligations. It also establishes the institutions responsible for enforcing those rights and resolving disputes.
+
+At the centre of this framework is the **Data Protection Board of India (DPBI)**, a specialised body responsible for ensuring compliance with the Act, investigating violations, and imposing penalties where necessary.
+
+## Data Protection Board of India (Sections 18–28, 32–33)
+
+The **Data Protection Board of India (DPBI)** is a statutory body established by the Central Government under the DPDP Act.
+
+It functions as the Act's primary enforcement authority and is designed to operate as a **digital-first adjudicatory body**, allowing complaints, proceedings, and hearings to take place electronically wherever possible.
+
+### Composition
+
+The Board consists of:
+
+- a **Chairperson**; and
+- such other Members as the Central Government may appoint.
+
+Members are expected to possess expertise in areas such as:
+
+- data governance;
+- information technology;
+- law;
+- cybersecurity; or
+- public administration.
+
+The Government also determines the Board's headquarters, service conditions, and other administrative matters.
+
+### Functions and Powers
+
+The Board is responsible for enforcing the DPDP Act.
+
+Its key functions include:
+
+- investigating personal data breaches;
+- hearing complaints made by Data Principals;
+- inquiring into violations by Data Fiduciaries, Data Processors, and Consent Managers;
+- issuing directions to ensure compliance with the Act;
+- accepting voluntary undertakings to resolve proceedings; and
+- imposing financial penalties where violations are established.
+
+For the purpose of conducting inquiries, the Board also has powers similar to those of a civil court, including the power to summon persons, require documents to be produced, and examine evidence.
+
+### Penalties
+
+Where the Board finds that the Act has been violated, it may impose monetary penalties.
+
+Depending on the nature of the contravention, these penalties can extend to **₹250 crore** under the penalty schedule prescribed by the Act.
+
+In determining the appropriate penalty, the Board considers factors such as:
+
+- the nature and gravity of the breach;
+- whether the breach was repeated;
+- the impact on affected individuals; and
+- any mitigating measures taken by the organisation.
+
+### Voluntary Undertakings
+
+The Act also allows proceedings to be resolved through **voluntary undertakings**.
+
+Instead of immediately imposing penalties, the Board may accept a written undertaking from an organisation committing to take corrective measures.
+
+If the undertaking is accepted and complied with, the matter may be resolved without further proceedings.
+
+However, if the undertaking is breached, the Board may reopen the matter and take appropriate action.
+
+### Blocking Powers
+
+Where a Data Fiduciary repeatedly fails to comply with the Act, the Board may recommend that the Central Government **block public access** to the relevant platform or service.
+
+This is one of the strongest enforcement tools available under the DPDP Act and is intended to be used only in cases of persistent non-compliance.
+
+### Appeals – Telecom Disputes Settlement and Appellate Tribunal (TDSAT)
+
+A person aggrieved by an order of the DPBI may appeal to the **Telecom Disputes Settlement and Appellate Tribunal (TDSAT).**
+
+Appeals must ordinarily be filed within **60 days**, although delays may be condoned where sufficient cause is shown.
+
+TDSAT may:
+
+- confirm the Board's decision;
+- modify it; or
+- set it aside.
+
+A further appeal lies to the **Supreme Court of India**, ensuring judicial oversight of the Board's decisions.
+
+The Act also bars ordinary civil courts from deciding matters that fall within the jurisdiction of the DPBI or TDSAT. This helps ensure that data protection disputes are handled by specialised forums.
+
+### Alternative Dispute Resolution
+
+The DPDP Act encourages disputes to be resolved without formal adjudication wherever possible.
+
+The Board may:
+
+- refer disputes for mediation; or
+- accept voluntary undertakings from organisations to remedy non-compliance.
+
+This reflects the Act's preference for achieving compliance rather than relying solely on punitive enforcement.
+
+### International Perspective
+
+India's institutional framework differs from that adopted under the **GDPR**.
+
+While the DPDP Act establishes a **single national enforcement body**—the Data Protection Board of India—the GDPR is enforced through **independent supervisory authorities** in each EU Member State, which are coordinated by the **European Data Protection Board (EDPB).**
+
+This difference reflects the fact that the GDPR operates across multiple sovereign States, whereas the DPDP Act governs a single national jurisdiction.
+
+### DPDP Rules, 2025 – Functioning of the Board
+
+The Rules prescribe the procedural framework governing the Data Protection Board, including:
+
+- appointment of members;
+- digital filing of complaints;
+- conduct of inquiries;
+- hearings;
+- service of notices; and
+- procedural requirements for appeals and enforcement.
+
+This follows the Act's objective of establishing a digital-first regulatory authority.
+
+### Implementation Timeline
+
+The Central Government has adopted a phased approach to implementing the DPDP Act and the DPDP Rules.
+
+### Stage 1
+
+Establishment of the Data Protection Board and appointment of its members.
+
+### Stage 2
+
+Registration and operationalisation of Consent Managers.
+
+### Stage 3
+
+Full implementation of the remaining compliance obligations, including consent notices, security safeguards, children's data, data retention, deletion obligations, and cross-border transfers.

@@ -1,0 +1,64 @@
+/* Design tokens: every color in the site is defined ONCE, here.
+   Components reference these variables instead of hardcoding colors,
+   so a rebrand or dark-mode toggle only ever requires editing this file. */
+
+:root {
+  --color-bg: #F8F8F6;
+  --color-bg-alt: #FFFFFF;
+  --color-text: #111111;
+  --color-text-secondary: #6B6B6B;
+  --color-accent: #2D5BFF;
+  --color-border: #E7E5E0;
+  --color-card: #FFFFFF;
+}
+
+/* When <html data-theme="dark"> is set (see ThemeContext.js), these
+   values override the ones above. No component code needs to change. */
+[data-theme='dark'] {
+  --color-bg: #111214;
+  --color-bg-alt: #17181B;
+  --color-text: #F2F2EF;
+  --color-text-secondary: #9A9A93;
+  --color-accent: #6E8CFF;
+  --color-border: #2A2B2E;
+  --color-card: #17181B;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+/* Global heading defaults: every h1–h6 automatically uses the serif
+   display font and a consistent baseline weight/margin, site-wide.
+   Individual components can still override font-size, color, or margin
+   as needed — but they never need to re-specify WHICH font a heading
+   uses. This is what "ensure font consistency" means in practice: one
+   rule, enforced everywhere, instead of trusting every component to
+   remember it correctly. */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif), Georgia, serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* Everything else (paragraphs, spans, buttons, inputs) inherits the
+   body font-family already set on <body> in this file — so as long as
+   a component doesn't explicitly override it, it's automatically
+   correct. Components should only set font-family when they need
+   something OTHER than the site default. */
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-inter), -apple-system, sans-serif;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

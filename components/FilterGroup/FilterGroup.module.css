@@ -1,0 +1,41 @@
+.group {
+  margin-bottom: 16px;
+}
+
+.label {
+  font-family: var(--font-inter);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+}
+
+.pills {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pill,
+.pillActive {
+  font-family: var(--font-inter);
+  font-size: 12.5px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+  background: transparent;
+}
+
+.pill {
+  border: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+}
+
+.pillActive {
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+  background: color-mix(in srgb, var(--color-accent) 8%, transparent);
+}
