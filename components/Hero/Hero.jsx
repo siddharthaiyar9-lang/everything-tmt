@@ -16,7 +16,6 @@ export default function Hero({ searchIndex }) {
 
   return (
     <section className={styles.hero}>
-      <span className={styles.pill}>Technology Law. Explained.</span>
       <h1 className={styles.headline}>
         Technology law.
         <br />
