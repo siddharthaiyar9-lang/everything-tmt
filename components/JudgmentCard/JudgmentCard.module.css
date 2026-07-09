@@ -1,0 +1,118 @@
+.wrapper {
+  padding: 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.caseName {
+  font-size: 19px;
+  color: var(--color-text);
+  margin: 0;
+  line-height: 1.25;
+  font-style: italic;
+}
+
+.tags {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.court {
+  display: inline-block;
+  font-family: var(--font-inter);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  border: 1px solid color-mix(in srgb, var(--color-accent) 20%, transparent);
+  background: color-mix(in srgb, var(--color-accent) 5%, transparent);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-weight: 600;
+}
+
+.topic {
+  font-family: var(--font-inter);
+  font-size: 11.5px;
+  color: var(--color-text-secondary);
+  font-weight: 600;
+}
+
+.summary {
+  font-family: var(--font-inter);
+  font-size: 13.5px;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin: 0 0 14px;
+}
+
+.keyPointsLabel {
+  font-family: var(--font-inter);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+}
+
+.keyPoints {
+  margin: 0 0 14px;
+  padding-left: 18px;
+}
+
+.keyPoints li {
+  font-family: var(--font-inter);
+  font-size: 12.5px;
+  color: var(--color-text);
+  line-height: 1.55;
+  margin-bottom: 4px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--color-border);
+  padding-top: 12px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.date {
+  font-family: var(--font-inter);
+  font-size: 11.5px;
+  color: var(--color-text-secondary);
+}
+
+.sourceLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-inter);
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--color-accent);
+  text-decoration: none;
+}
+.practiceArea {
+  display: inline-block;
+  font-family: var(--font-inter);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-text);
+  background: var(--color-border);
+  border-radius: 4px;
+  padding: 3px 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
