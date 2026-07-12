@@ -62,4 +62,10 @@ export const newsletters = [
     platform: "Substack",
     url: "https://everythingtmt.substack.com/p/indias-foray-into-algorithmic-governance",
   },
+  {
+    title: "The Algorithmic Problem Stacks Up",
+    category: "AI",
+    platform: "Substack",
+    url: "https://everythingtmt.substack.com/p/the-algorithmic-problem-stacks-up",
+  },
 ];
