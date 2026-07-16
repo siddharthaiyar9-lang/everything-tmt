@@ -47,13 +47,20 @@
   font-weight: 600;
   font-size: 12.5px;
 }
-.substack-link {
-  color: #ff6719;
-  text-decoration: none;
+.subheading a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-decoration-color: color-mix(
+    in srgb,
+    var(--color-accent) 40%,
+    transparent
+  );
+  text-underline-offset: 2px;
+  font-weight: 600;
 }
 
-.substack-link:hover {
-  text-decoration: underline;
+.subheading a:hover {
+  text-decoration-color: var(--color-accent);
 }
 .empty {
   font-family: var(--font-inter);
