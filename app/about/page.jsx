@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./page.module.css";
 
 export const metadata = {
@@ -19,7 +20,13 @@ export default function AboutPage() {
       </p>
 
       <div className={styles.profileCard}>
-        <div className={styles.avatar} />
+        <Image
+          src="/SiddharthAiyar_img.jpg"
+          alt="Siddharth Aiyar"
+          width={84}
+          height={84}
+          className={styles.avatar}
+        />
         <div>
           <div className={styles.name}>Siddharth Aiyar</div>
           <div className={styles.credentials}>
@@ -38,8 +45,8 @@ export default function AboutPage() {
       </p>
 
       <p className={styles.paragraph}>
-        Over the last few years, I&apos;ve explored different corners of TMT
-        law, from intermediary liability and digital privacy to media regulation
+        Over the last few years, I&apos;ve explored different corners of TMT law
+        — from intermediary liability and digital privacy to media regulation
         and platform governance. I&apos;ve interned with policy teams and legal
         organisations working in the tech space, and spent a fair amount of time
         trying to make sense of dense legislation, case law, and regulatory
