@@ -1,0 +1,280 @@
+---
+title: "The Algorithmic Problem Stacks Up"
+description: "Why predictive policing debates that focus only on AI miss the bigger picture — AI is just the topmost layer of India's pre-existing digital policing stack."
+category: "AI"
+tags: ["AI", "Surveillance", "Policing"]
+date: "2026-01-09"
+author: "Siddharth Aiyar"
+readingTime: "11 min read"
+---
+
+Contemporary discourse surrounding surveillance and digital systems
+[focuses
+extensively](https://eucpn.org/sites/default/files/document/files/PP%20%282%29.pdf)
+on artificial intelligence. Media headlines, civil rights litigation,
+and legislative debates routinely zero in on predictive policing
+algorithms—software like Geolitica (formerly PredPol) or
+ShotSpotter—interrogating their statistical validity and racial
+biases. This focus, while well-intentioned, treats a systemic symptom as
+the root cause. Essentially, these discussions tend see AI as an
+autonomous entity superimposing itself onto modern law enforcement.
+However, this is not the case. AI is merely the [topmost
+layer](https://www.deloitte.com/global/en/industries/government-public/perspectives/urban-future-with-a-purpose/surveillance-and-predictive-policing-through-ai.html)
+of a massive "stack"—which we will refer to as the "digital policing
+stack"—of pre-existing digital policing infrastructure, and is
+essentially the analytical component, which gives meaning to the vast
+amount of data, collected through the "sensory organs," that is the
+means through which such data is collected. Instead of arguing for a
+traditional system of AI-regulation,
+
+I rely on a combination of the
+[techno-legal](https://psa.gov.in/CMS/web/sites/default/files/publication/AI-WP_TechnoLegal.pdf)
+and
+[socio-technical](https://datasociety.net/research-library/a-sociotechnical-approach-to-ai-policy/)
+frameworks to argue that the challenge starts even before deployment of
+AI-driven algorithmic policing (referred to interchangeably as "AI-based
+policing" or "algorithmic policing") actually occurs, and that primary
+focus should be on regulating the pre-existing data layer that makes
+algorithmic policing possible, and not the algorithm alone. To do so, we
+must first understand two things: (1) what I mean when I use the term
+"digital policing," and; (2) the normative elements of it.
+
+At its core level, digital policing refers to the integration of modern
+analytical and data-driven methods into law-enforcement, characterised
+by the so-called
+"[dataification](https://ijlmh.com/paper/from-privacy-to-profiling-rethinking-constitutional-limits-of-state-surveillance-in-the-age-of-datafication-in-india/)"
+of everyday activities such that vast amounts of information can be
+easily analysed by the state. Of course, most digital infrastructures
+involved in policing rely on the digitization and centralized storage of
+records rather than artificial intelligence. A major example is the
+[Crime and Criminal Tracking Network &
+Systems](https://digitalpolice.gov.in/DigitalPolice/AboutUs) (CCTNS), a
+national database that connects over 15,000 police stations to store
+digitized information on complaints, active investigations, and criminal
+cases.
+
+Nonetheless, as algorithms become increasingly more powerful and
+pervasive, it is set to be an inevitable inclusion in the future of
+law-enforcement. As discussed, algorithms are not independent tools, but
+a part of the digital policing stack, operating on top of pre-existing
+digital infrastructure. For instance, since 2021, Tamil Nadu has been
+using a [Facial Recognition Software
+(FRS)](https://www.newindianexpress.com/states/tamil-nadu/2021/Oct/05/tamil-nadus-facial-recognition-tech-to-help-police-nab-criminals-2367709.html)
+that is integrated with the CCTNS to match video feeds against digitized
+criminal photographs. Similarly, the [Organised Crime Network
+Database](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2200966&reg=3&lang=1)
+(OCND) operates as a stack on top of the National Intelligence Grid
+(NATGRID) to analyse patterns, retrieve data and act as a tool to detect
+cross-state terror financing. The digital policing stack consists of
+several constituent elements that layer on top of one another to move
+policing from reactive investigation toward predictive, continuous, and
+data-driven governance.
+
+We note that at each layer, there is a unique risk that is specific to
+that layer, and there have been [well-documented
+harms](https://www.orfonline.org/expert-speak/algorithmic-policing-in-india-the-case-for-a-governing-framework)
+emerging from this set-up. However, much of AI governance—especially
+in the field of predictive policing—assumes that predominant risk
+emerges from the algorithm itself despite, somewhat counterintuitively,
+recognising that a major cause for algorithmic harm is the datasets that
+exist within it. This is a category error. Legal risk is not something
+that switches on only once an algorithm is deployed; it accrues
+progressively, at every point where the state exercises a choice over
+information. To see why, it helps to ask a simple question at each
+layer: what has the state _done_ to the data, and does that act carry
+independent legal significance?
+
+**Data collection determines what information exists.** Before any
+classification or analysis happens, the state has already made a
+threshold decision about which facts about a citizen enter the record at
+all—biometric markers, forensic samples, CCTV footage, complaint
+histories. This is not a neutral act of "gathering." Under the
+_Puttaswamy_ framework, collection itself engages the right to privacy,
+because the very existence of a record about a person, retrievable and
+re-usable indefinitely, is a distinct harm from whatever use is
+eventually made of it. A CCTNS entry sits dormant for years, but its
+creation already forecloses a certain kind of anonymity.
+
+**Classification determines what that information means.** For instance,
+the Tamil Nadu Police recently adopted the Sexual Offender Profiling,
+Evaluation, Classification, Tracking, Risk Assessment and Unified
+Monitoring System
+("[SPECTRUM](https://www.ndtv.com/india-news/tamil-nadu-introduces-spectrum-to-classify-and-monitor-sexual-offenders-11704147)"),
+which assigns sexual offenders to colour-coded risk categories based on
+their perceived likelihood of reoffending. SPECTRUM does not add new
+facts about a person; it adds a _judgment_ about the facts already
+collected—Red, Amber, or Green. That judgment then travels with the
+underlying record and conditions how every downstream system treats that
+person, independent of whether the classification was accurate,
+contestable, or even disclosed. This is where the state moves from
+record-keeper to adjudicator, quietly, without the due process
+architecture that ordinarily accompanies an adjudicative act.
+Classification is a legally consequential exercise precisely because it
+is sticky: once a person is tagged, the tag does the work that used to
+require a fresh determination each time.
+
+**Interoperability determines who can access and use it.** A record
+confined to a single database, however invasive its contents, is bounded
+by the purpose for which it was collected. The moment it becomes
+interoperable—as NATGRID's federated-access model or the
+Inter-operable Criminal Justice System are [designed to
+allow](https://www.mha.gov.in/en/commoncontent/inter-operable-criminal-justice-system-icjs)—that
+boundary dissolves. Purpose limitation, one of the DPDP Act's
+foundational principles, is not violated by any single act of
+collection; it is violated by the infrastructural decision to make data
+legible and queryable across agencies that had no role in collecting it.
+Interoperability is, in effect, a standing authorisation for future uses
+that were never contemplated at the point of consent (to the extent
+consent was sought at all, given the state's [exemptions under the Act
+for law-enforcement
+purposes](https://everythingtmt.substack.com/p/where-the-dpdp-regime-holds-and-where)).
+
+**Decision-support determines how it shapes policing**. This is the
+layer where classification and interoperability convert into operational
+consequence—a patrol pattern, a surveillance frequency, a threshold
+for "caution" in an officer's interaction with a specific individual.
+South Zone Inspector General Vijayendra Bidari Bidari's own
+[description](https://www.ndtv.com/india-news/tamil-nadu-introduces-spectrum-to-classify-and-monitor-sexual-offenders-11704147)
+of SPECTRUM makes this explicit: the system does not merely store a
+categorisation; it dictates a procedure. That is a rule with the
+practical force of law, generated and applied without legislative
+authorisation, judicial oversight, or a codified standard of review.
+
+**Predictive AI** determines what future inferences the State may draw
+from it, and it does so through choices that are themselves legally
+significant, not merely inherited from upstream layers. For instance,
+the Delhi Police uses the Crime Mapping, Analytics and Predictive System
+([CMAPS](https://www.hindustantimes.com/delhi/delhi-police-is-using-precrime-data-analysis-to-send-its-men-to-likely-trouble-spots/story-hZcCRyWMVoNSsRhnBNgOHI.html))
+to identify potential hotspots of crimes by plotting live distress calls
+and historical crime data onto a geospatial map to identify hotspots,
+allowing authorities to strategically deploy patrolling resources. A
+model like CMAPS is not a passive conduit for CCTNS; it makes
+independent design decisions that carry their own legal weight. Which
+features are engineered into the geospatial prediction, prior arrests,
+complaint density, a neighbourhood's historical classification scores,
+is a choice that determines whose past becomes a template for future
+deployment. Feature selection is where a classification made under
+SPECTRUM years earlier gets converted into a live variable weighted
+against a citizen who may never have been told a "Red" tag existed, let
+alone that it now feeds a hotspot algorithm patrolling their street.
+Similarly, Tamil Nadu's FRS makes a threshold decision every time it
+runs—the confidence score above which a match is treated as
+actionable. That threshold is the line between an investigative lead and
+a false accusation, set by an engineer or vendor with no public,
+contestable standard governing where it should sit. These are not "AI
+risks" in the generic sense the discourse usually means (bias,
+hallucination, opacity); they are specific legal choices—about
+evidentiary weight, about whose data trains the model, about what counts
+as a sufficient match—made inside the model architecture itself, and
+they deserve to be treated as such rather than folded into a vague
+complaint about "algorithmic bias."
+
+So, what would a solution look like? The answer lies in recognising that
+every layer of the digital policing stack discussed above is an
+independent exercise of state power over information, carrying its own
+legal significance irrespective of what happens at subsequent stages. By
+the time an AI system recommends a patrol route, flags an individual, or
+predicts a crime hotspot, it is operating on a series of choices the
+State has already made—what information was collected, how it was
+classified, who it was shared with, and how it was operationalised. AI
+is therefore not an independent or objective decision-maker; it is the
+culmination of an existing socio-technical system.
+
+This is where the
+[sociotechnical](https://datasociety.net/research-library/a-sociotechnical-approach-to-ai-policy/)
+framework becomes indispensable, because it explains why isolating the
+algorithm for scrutiny will always produce an incomplete account of
+harm. A sociotechnical reading insists that the "social" and the
+"technical" cannot be prised apart—the outcome of a predictive
+policing tool is never a property of the model alone, but of the model's
+interaction with the institutions, workflows, and human judgment
+surrounding it. Applied to the digital policing stack, this means that
+CMAPS does not "cause" [over-policing of a
+locality](https://vidhilegalpolicy.in/wp-content/uploads/2021/08/The-Use-of-Facial-Recognition-Technology-for-Policing-in-Delhi-compressed.pdf)
+in the way a faulty component causes a machine to fail. It causes
+over-policing _in combination with_ how classification labels were
+assigned upstream, how interoperability rules routed that data to a
+particular unit, and how an officer on the ground chooses to exercise
+the discretion that decision-support layers structure but do not
+eliminate. Auditing the algorithm's statistical validity, while
+necessary, answers only the narrowest of the questions a court or
+regulator should be asking, and cannot tell you which layer caused the
+final harm.
+
+This is also precisely why the
+[techno-legal](https://psa.gov.in/CMS/web/sites/default/files/publication/AI-WP_TechnoLegal.pdf)
+approach acts as a natural governance response. Rather than treating
+regulation as something imposed externally once an AI system is
+deployed, it argues that legal, technical and institutional safeguards
+should be embedded throughout the lifecycle of a system. Applied to the
+digital policing stack, this means that governance cannot begin at the
+predictive AI layer because legally significant choices have already
+been made long before an algorithm is introduced. Instead, safeguards
+must accompany each transformation of information within the stack:
+robust standards governing data collection, transparent and contestable
+criteria for systems such as SPECTRUM, clear limits on interoperability
+between databases, documented rules governing decision-support systems,
+and continuous oversight of predictive models after deployment.
+
+This model's lifecycle framework is useful here because it refuses to
+let the model stage collapse into a single monolithic "deployment"
+moment. Applied to CMAPS or FRS, this means that a model which performs
+well during testing may nevertheless generate harmful outcomes once
+deployed in changing operational environments. A techno-legal response,
+consistent with the white paper's own proposed controls, would mandate
+model-specific instruments at each of these sub-stages: red-teaming and
+bias scoring before a model like FRS is approved for deployment, and
+runtime monitoring with defined confidence thresholds once it's live,
+rather than a single upfront certification that assumes a model's
+behaviour is fixed at the point of training.
+
+Naturally, this does not mean every layer requires the same form of
+regulation. Data collection raises questions of necessity,
+proportionality and minimisation. Classification raises questions of
+transparency, contestability and procedural fairness. Interoperability
+raises concerns around purpose limitation and access controls.
+Predictive AI introduces distinct concerns of explainability, validation
+and accountability. The point is not that every stage should be governed
+identically, but that every stage should be governed because every stage
+involves an independent exercise of state power over information.
+
+Interestingly, this understanding is not entirely foreign to Indian law.
+The Digital Personal Data Protection Act, 2023, already proceeds on the
+intuition that governance obligations do not arise only at the point
+where data is ultimately used, but attach throughout its lifecycle.
+Obligations relating to notice, purpose limitation, data minimisation,
+accuracy, security safeguards, retention and erasure recognise that
+legal significance accompanies information as it is collected,
+processed, stored and ultimately deleted, rather than materialising only
+when a consequential decision is made. Although the Act creates
+significant exemptions for law-enforcement processing, its underlying
+governance philosophy remains instructive. It reflects an appreciation
+that the legal risks associated with information are cumulative,
+emerging not from a single act of processing but from a series of
+decisions about how information is handled over time. In many ways, this
+lifecycle-oriented approach mirrors the logic underlying the digital
+policing stack itself.
+
+Most of our discussion has focused on how human error plays a huge role
+in how the digital policing stack is influenced by human biases. This
+means that a techno-legal approach, as discussed, cannot operate in
+isolation, and requires a socio-technical perspective of governance as
+well. This means that governance should extend to the state officials
+who interact with decision-support tools: training that emphasises the
+limitations of algorithmic outputs, documented reasoning when
+recommendations are followed or overridden, and periodic institutional
+review to identify patterns of over-reliance or misuse. Eliminating
+discretion altogether is not the way forward—it has been
+[recognized](<https://www.policefoundationindia.org/images/resources/pdf/MOHANTY_-ARREST_DISCREION_BEHAVIOR_POLICE_IN_INDIA_30_JULY_(1).pdf>)
+as an imperative part of law-enforcement procedure.
+
+The challenge, therefore, is to shift the object of governance away from
+the algorithm alone and towards the information lifecycle that makes
+algorithmic policing possible. Each stage of the digital policing stack
+represents an independent exercise of state power over information and
+therefore warrants its own set of legal, technical and institutional
+safeguards. Governance should accompany information throughout its
+lifecycle, from collection and classification to interoperability,
+operational use and predictive analysis, if India's digital policing
+infrastructure is to remain both technologically capable and
+constitutionally legitimate.
