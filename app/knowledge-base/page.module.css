@@ -52,6 +52,20 @@
   font-weight: 600;
   font-size: 12.5px;
 }
+.content a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-decoration-color: color-mix(
+    in srgb,
+    var(--color-accent) 40%,
+    transparent
+  );
+  text-underline-offset: 2px;
+}
+
+.content a:hover {
+  text-decoration-color: var(--color-accent);
+}
 
 .empty {
   font-family: var(--font-inter);

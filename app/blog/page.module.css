@@ -47,7 +47,14 @@
   font-weight: 600;
   font-size: 12.5px;
 }
+.substack-link {
+  color: #ff6719;
+  text-decoration: none;
+}
 
+.substack-link:hover {
+  text-decoration: underline;
+}
 .empty {
   font-family: var(--font-inter);
   font-size: 14px;

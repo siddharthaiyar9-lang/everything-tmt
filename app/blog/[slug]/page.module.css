@@ -127,7 +127,20 @@
   border: 1px solid var(--color-border);
   vertical-align: top;
 }
+.content a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-decoration-color: color-mix(
+    in srgb,
+    var(--color-accent) 40%,
+    transparent
+  );
+  text-underline-offset: 2px;
+}
 
+.content a:hover {
+  text-decoration-color: var(--color-accent);
+}
 @media (max-width: 900px) {
   .layout {
     grid-template-columns: 1fr;
