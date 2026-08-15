@@ -1,5 +1,7 @@
 import BlogCard from "@/components/BlogCard/BlogCard";
+import ExternalWriteupCard from "@/components/ExternalWriteupCard/ExternalWriteupCard";
 import { getAllBlogPosts } from "@/lib/blog";
+import { externalWriting } from "@/data/externalWriting";
 import styles from "./page.module.css";
 
 export const metadata = {
@@ -21,17 +23,8 @@ export default async function BlogPage({ searchParams }) {
       <span className={styles.pill}>Blog</span>
       <h1 className={styles.heading}>Everything TMT, in full</h1>
       <p className={styles.subheading}>
-        Short, sweet and timely analyses and commentary on technology law,
-        privacy, and AI regulation. To get these pieces straight to your email
-        ID,{" "}
-        <a
-          href="https://everythingtmt.substack.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          subscribe to my Substack
-        </a>
-        . It's free!
+        Analysis and commentary on technology law, privacy, and AI regulation —
+        written in full here, not just linked out.
       </p>
 
       {category && (
@@ -51,6 +44,17 @@ export default async function BlogPage({ searchParams }) {
             <BlogCard key={post.slug} post={post} />
           ))}
         </div>
+      )}
+
+      {!category && externalWriting.length > 0 && (
+        <>
+          <div className={styles.sectionLabel}>Also Published Elsewhere</div>
+          <div className={styles.grid}>
+            {externalWriting.map((piece, i) => (
+              <ExternalWriteupCard key={i} piece={piece} />
+            ))}
+          </div>
+        </>
       )}
     </div>
   );
