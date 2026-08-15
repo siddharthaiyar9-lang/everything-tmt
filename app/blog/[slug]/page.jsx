@@ -10,6 +10,7 @@ import { mdxComponents } from "@/components/mdx";
 import TableOfContents from "@/components/TableOfContents/TableOfContents";
 import ReadingProgress from "@/components/ReadingProgress/ReadingProgress";
 import styles from "./page.module.css";
+import { SITE_AUTHOR } from "@/data/site";
 
 export function generateStaticParams() {
   return getAllBlogPosts().map((post) => ({ slug: post.slug }));
@@ -35,6 +36,7 @@ export default async function BlogPostPage({ params }) {
 
   const { frontmatter, content } = post;
   const headings = extractHeadings(content);
+  const isGuest = frontmatter.author && frontmatter.author !== SITE_AUTHOR;
 
   return (
     <div className={styles.page}>
@@ -46,7 +48,12 @@ export default async function BlogPostPage({ params }) {
 
       <div className={styles.layout}>
         <div className={styles.main}>
-          <div className={styles.category}>{frontmatter.category}</div>
+          <div className={styles.categoryRow}>
+            <span className={styles.category}>{frontmatter.category}</span>
+            {isGuest && (
+              <span className={styles.guestTag}>Guest Contributor</span>
+            )}
+          </div>
           <h1 className={styles.title}>{frontmatter.title}</h1>
 
           <div className={styles.meta}>

@@ -149,3 +149,22 @@
     display: none;
   }
 }
+.categoryRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.guestTag {
+  display: inline-block;
+  font-family: var(--font-inter);
+  font-size: 10.5px;
+  font-weight: 700;
+  color: var(--color-text-secondary);
+  background: var(--color-border);
+  border-radius: 4px;
+  padding: 3px 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}

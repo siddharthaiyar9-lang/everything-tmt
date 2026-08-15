@@ -1,4 +1,4 @@
-import { Instrument_Serif, Newsreader, Inter } from "next/font/google";
+import { Instrument_Serif, Newsreader, Montserrat } from "next/font/google";
 import { ThemeProvider } from "@/lib/ThemeContext";
 import { getSearchIndex } from "@/lib/searchIndex";
 import Navbar from "@/components/Navbar/Navbar";
@@ -16,7 +16,7 @@ const newsreader = Newsreader({
   variable: "--font-newsreader",
 });
 
-const inter = Inter({
+const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-inter",
 });
@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${instrumentSerif.variable} ${newsreader.variable} ${inter.variable}`}
+      className={`${instrumentSerif.variable} ${newsreader.variable} ${montserrat.variable}`}
     >
       <body>
         <ThemeProvider>
