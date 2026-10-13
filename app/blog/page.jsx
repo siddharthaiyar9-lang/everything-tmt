@@ -21,12 +21,10 @@ export default async function BlogPage({ searchParams }) {
   return (
     <div className={styles.page}>
       <span className={styles.pill}>Blog</span>
-      <h1 className={styles.heading}>Everything TMT, in full</h1>
+      <h1 className={styles.heading}>The Everything TMT Blog</h1>
       <p className={styles.subheading}>
         Analysis and commentary on technology law, privacy, and AI regulation. 
-        <br> 
         To stay ahead, subscribe to my [newsletter](https://everythingtmt.substack.com/subscribe)!
-        </br>
       </p>
 
       {category && (
