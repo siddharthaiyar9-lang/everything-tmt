@@ -32,9 +32,10 @@ export default async function BlogPage({ searchParams }) {
     rel="noopener noreferrer"
   >
     subscribe to my Substack!
+     </a>
     </br>
-  </a>
-      </p>
+ 
+  </p>
 
       {category && (
         <div className={styles.activeFilter}>
