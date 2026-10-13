@@ -24,7 +24,16 @@ export default async function BlogPage({ searchParams }) {
       <h1 className={styles.heading}>The Everything TMT Blog</h1>
       <p className={styles.subheading}>
         Analysis and commentary on technology law, privacy, and AI regulation. 
-        To stay ahead, subscribe to my [newsletter](https://everythingtmt.substack.com/subscribe)!
+        <br>
+        To get these pieces straight to your email ID,{" "}
+  <a
+    href="https://everythingtmt.substack.com"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    subscribe to my Substack
+  </a>
+  . It&apos;s free!
       </p>
 
       {category && (
