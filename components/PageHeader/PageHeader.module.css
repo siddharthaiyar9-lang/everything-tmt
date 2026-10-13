@@ -1,0 +1,26 @@
+.header {
+  position: relative;
+  isolation: isolate; /* keeps the icon's z-index contained inside this block */
+  overflow: hidden;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 240px;
+  height: 240px;
+  transform: translateY(-50%) rotate(8deg);
+  color: var(--color-accent);
+  opacity: 0.07;
+  z-index: -1; /* sits behind the text */
+  pointer-events: none;
+}
+
+@media (max-width: 700px) {
+  .icon {
+    width: 140px;
+    height: 140px;
+    right: -10px;
+  }
+}

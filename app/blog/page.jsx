@@ -3,6 +3,8 @@ import ExternalWriteupCard from "@/components/ExternalWriteupCard/ExternalWriteu
 import { getAllBlogPosts } from "@/lib/blog";
 import { externalWriting } from "@/data/externalWriting";
 import styles from "./page.module.css";
+import { BookOpen } from 'lucide-react';
+import PageHeader from '@/components/PageHeader/PageHeader';
 
 export const metadata = {
   title: "Blog | Everything TMT",
@@ -20,7 +22,8 @@ export default async function BlogPage({ searchParams }) {
 
   return (
     <div className={styles.page}>
-      <span className={styles.pill}>Blog</span>
+      <PageHeader icon={BookOpen}>
+  <span className={styles.pill}>Blog</span>
       <h1 className={styles.heading}>The Everything TMT Blog</h1>
       <p className={styles.subheading}>
         Analysis and commentary on technology law, privacy, and AI regulation. 

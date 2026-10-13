@@ -2,6 +2,8 @@ import { Play } from 'lucide-react';
 import PodcastCard from '@/components/PodcastCard/PodcastCard';
 import { podcasts } from '@/data/podcasts';
 import styles from './page.module.css';
+import { Mic } from 'lucide-react';
+import PageHeader from '@/components/PageHeader/PageHeader';
 
 export const metadata = {
   title: 'Podcast | Everything TMT',
@@ -12,9 +14,12 @@ export default function PodcastPage() {
   const [featured, ...rest] = podcasts;
 
   return (
-    <div className={styles.page}>
+     <div className={styles.page}>
+    <PageHeader icon={Mic}>
       <span className={styles.pill}>Podcast</span>
-      <h1 className={styles.heading}>Everything TMT, the podcast</h1>
+      <h1 className={styles.heading}>The Everything TMT Podcast</h1>
+    </PageHeader>
+
 
       <div className={styles.sectionLabel}>Featured Episode</div>
       <div className={styles.featured}>
