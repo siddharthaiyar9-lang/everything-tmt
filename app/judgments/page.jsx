@@ -5,6 +5,8 @@ import FilterGroup from "@/components/FilterGroup/FilterGroup";
 import JudgmentCard from "@/components/JudgmentCard/JudgmentCard";
 import { judgments } from "@/data/judgments";
 import styles from "./page.module.css";
+   import { Gavel } from 'lucide-react';
+   import PageHeader from '@/components/PageHeader/PageHeader';
 
 export default function JudgmentsPage() {
   const [practiceArea, setPracticeArea] = useState("All");
@@ -51,6 +53,7 @@ export default function JudgmentsPage() {
 
   return (
     <div className={styles.page}>
+      <PageHeader icon={Gavel}>
       <span className={styles.pill}>Judgments</span>
       <h1 className={styles.heading}>Judgments Tracker</h1>
       <p className={styles.subheading}>
@@ -58,6 +61,7 @@ export default function JudgmentsPage() {
         copyright and AI training, deepfakes and personality rights, AI in the
         judiciary, and the evolving law of data protection and surveillance.
       </p>
+      </PageHeader>
 
       <div className={styles.filterBar}>
         <div className={styles.filterGrid}>

@@ -8,6 +8,8 @@ import TrackerCard from "@/components/TrackerCard/TrackerCard";
 import StatusPill from "@/components/StatusPill/StatusPill";
 import { trackerEntries } from "@/data/tracker";
 import styles from "./page.module.css";
+   import { Landmark } from 'lucide-react';
+   import PageHeader from '@/components/PageHeader/PageHeader';
 
 export default function TrackerPage() {
   const [regulator, setRegulator] = useState("All");
@@ -60,6 +62,7 @@ export default function TrackerPage() {
 
   return (
     <div className={styles.page}>
+      <PageHeader icon={Landmark}>
       <span className={styles.pill}>AI Regulation Tracker</span>
       <h1 className={styles.heading}>India AI Regulation Tracker</h1>
       <p className={styles.subheading}>
@@ -67,6 +70,7 @@ export default function TrackerPage() {
         across financial regulators, telecom, central government, the judiciary,
         cybersecurity, competition law, and the states.
       </p>
+      </PageHeader>
 
       <div className={styles.tabs}>
         <button
