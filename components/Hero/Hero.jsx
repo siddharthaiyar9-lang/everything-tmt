@@ -17,12 +17,10 @@ export default function Hero({ searchIndex }) {
   return (
     <section className={styles.hero}>
       <h1 className={styles.headline}>
-        Technology law.
-        <br />
-        Without the legalese.
-      </h1>
+        Technology law and Policy Explained.
+            </h1>
       <p className={styles.subheading}>
-        Clear explainers, India&apos;s AI regulation tracker, podcasts, and
+        SImple explainers, India&apos;s AI regulation tracker, podcasts, and
         research on privacy, cybersecurity, and digital regulation.
       </p>
       <div className={styles.actions}>

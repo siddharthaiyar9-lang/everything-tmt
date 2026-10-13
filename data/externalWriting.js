@@ -23,9 +23,31 @@ export const externalWriting = [
   {
     title: "The Digital Sovereignty Bandwagon — Part 2",
     publication: "The Policy Pawprint (Data Law & Policy)",
-    url: "https://datalawpolicy.com/the-policy-pawprint/f/the-digital-sovereignty-bandwagon-part-2",
     date: "2026-08-13",
     dateLabel: "2026",
     type: "Series",
   },
+  {
+    title: "The Digital Sovereignty Bandwagon - Part 3",
+    publication: "The Policy Pawprint (Data Law & Policy",
+    url: "https://datalawpolicy.com/the-policy-pawprint/f/the-digital-sovereignty-bandwagon-part-3",
+    date: "2026-08-16",
+    dateLabel: "2026",
+    type: "Series",
+  },
+  {
+    title: "The Digital Sovereignty Bandwagon - Part 4",
+    publication: "The Policy Pawprint (Data Law & Policy",
+    url: "https://datalawpolicy.com/the-policy-pawprint/f/the-digital-sovereignty-bandwagon-part-4",
+    date: "2026-08-19",
+    dateLabel: "2026",
+    type: "Series",
+  }
+  {title: "Lost in Translation? The Limits of Converting Law to Code",
+    publication: "Indic Pacific Legal Research",
+    url: "https://www.indicpacific.com/post/lost-in-translation-the-limits-of-converting-law-to-code",
+    date: "2026-10-12",
+    datelable: "2026",
+    type: "Blog"
+  }
 ];
