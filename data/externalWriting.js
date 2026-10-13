@@ -42,12 +42,12 @@ export const externalWriting = [
     date: "2026-08-19",
     dateLabel: "2026",
     type: "Series",
-  }
+  },
   {title: "Lost in Translation? The Limits of Converting Law to Code",
     publication: "Indic Pacific Legal Research",
     url: "https://www.indicpacific.com/post/lost-in-translation-the-limits-of-converting-law-to-code",
     date: "2026-10-12",
     datelable: "2026",
-    type: "Blog"
-  }
+    type: "Blog",
+  },
 ];
