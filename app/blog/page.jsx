@@ -26,6 +26,7 @@ export default async function BlogPage({ searchParams }) {
         Analysis and commentary on technology law, privacy, and AI regulation. 
         <br> 
         To stay ahead, subscribe to my [newsletter](https://everythingtmt.substack.com/subscribe)!
+        </br>
       </p>
 
       {category && (
