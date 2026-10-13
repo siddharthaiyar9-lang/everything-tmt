@@ -24,7 +24,7 @@ export default async function KnowledgeBasePage({ searchParams }) {
 
   return (
     <div className={styles.page}>
-      <PageHeader icon={Gavel}>
+      <PageHeader icon={Brain}>
       <span className={styles.pill}>Knowledge Base</span>
       <h1 className={styles.heading}>The Knowledge Base</h1>
       <p className={styles.subheading}>
