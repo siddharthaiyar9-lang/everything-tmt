@@ -1,5 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { User } from 'lucide-react';
+import PageHeader from '@/components/PageHeader/PageHeader';
 
 export const metadata = {
   title: "About | Everything TMT",
