@@ -31,9 +31,9 @@ export default async function BlogPage({ searchParams }) {
     target="_blank"
     rel="noopener noreferrer"
   >
-    subscribe to my Substack
+    subscribe to my Substack!
+    </br>
   </a>
-  . It&apos;s free!
       </p>
 
       {category && (
