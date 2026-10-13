@@ -63,7 +63,6 @@ export default function TrackerPage() {
   return (
     <div className={styles.page}>
       <PageHeader icon={Landmark}>
-      <span className={styles.pill}>AI Regulation Tracker</span>
       <h1 className={styles.heading}>India AI Regulation Tracker</h1>
       <p className={styles.subheading}>
         A focused look at how India is governing artificial intelligence —

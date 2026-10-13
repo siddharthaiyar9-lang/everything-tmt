@@ -54,7 +54,6 @@ export default function JudgmentsPage() {
   return (
     <div className={styles.page}>
       <PageHeader icon={Gavel}>
-      <span className={styles.pill}>Judgments</span>
       <h1 className={styles.heading}>Judgments Tracker</h1>
       <p className={styles.subheading}>
         Indian court decisions on artificial intelligence and data privacy —

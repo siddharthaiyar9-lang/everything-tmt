@@ -20,7 +20,6 @@ export default async function BlogPage({ searchParams }) {
   return (
     <div className={styles.page}>
       <PageHeader icon={BookOpen}>
-        <span className={styles.pill}>Blog</span>
         <h1 className={styles.heading}>The Everything TMT Blog</h1>
         <p className={styles.subheading}>
           Analysis and commentary on technology law, privacy, and AI regulation.

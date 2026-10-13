@@ -9,8 +9,9 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <div className={styles.page}>
-      <span className={styles.pill}>About</span>
-      <h1 className={styles.heading}>Making technology law understandable</h1>
+      <PageHeader icon={User}>
+      <h1 className={styles.heading}>Making technology law and policy understandable</h1>
+      </PageHeader>
 
       <p className={styles.intro}>
         The idea behind Everything TMT is simple: make sure everyone has some

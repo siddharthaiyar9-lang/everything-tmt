@@ -16,7 +16,6 @@ export default function PodcastPage() {
   return (
      <div className={styles.page}>
     <PageHeader icon={Mic}>
-      <span className={styles.pill}>Podcast</span>
       <h1 className={styles.heading}>The Everything TMT Podcast</h1>
     </PageHeader>
 
