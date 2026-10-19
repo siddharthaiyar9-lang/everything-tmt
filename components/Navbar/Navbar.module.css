@@ -22,17 +22,19 @@
 }
 
 .logo {
-  font-family: var(--font-serif);
-  font-size: 22px;
+  font-family: var(--font-brand), sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
   color: var(--color-text);
   display: flex;
   align-items: baseline;
-  gap: 6px;
+  gap: 8px;
 }
 
 .logoAccent {
   color: var(--color-accent);
-  font-style: italic;
+  font-style: normal;
 }
 
 .links {

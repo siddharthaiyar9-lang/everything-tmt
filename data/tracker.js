@@ -665,7 +665,7 @@ export const trackerEntries = [
       "Incentives include a 20% employee AI training reimbursement (up to ₹800 per worker per month), a 5% top-up on IP acquisition costs for AI patents (capped at ₹25,000) and AI cloud credit reimbursements for startups using IndiaAI GPU infrastructure.",
     ],
     source:
-      "https://rising.rajasthan.gov.in/storage/app/public/files/pdf/rajasthan-ai-ml-policy-2026.pdf",
+      "https://rising.rajasthan.gov.in/storage/app/public/files/pdf/rajasthan-ai-ml-policy-2026.pdfj",
   },
   {
     id: "trai-tcccpr-third-amendment-2026",
