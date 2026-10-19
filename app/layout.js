@@ -1,4 +1,9 @@
-import { Instrument_Serif, Newsreader, Montserrat } from "next/font/google";
+import {
+  Instrument_Serif,
+  Newsreader,
+  Montserrat,
+  Silkscreen,
+} from "next/font/google";
 import { ThemeProvider } from "@/lib/ThemeContext";
 import { getSearchIndex } from "@/lib/searchIndex";
 import Navbar from "@/components/Navbar/Navbar";
@@ -10,15 +15,15 @@ const instrumentSerif = Instrument_Serif({
   weight: "400",
   variable: "--font-serif",
 });
-
 const newsreader = Newsreader({
   subsets: ["latin"],
   variable: "--font-newsreader",
 });
-
-const montserrat = Montserrat({
+const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-inter" });
+const silkscreen = Silkscreen({
   subsets: ["latin"],
-  variable: "--font-inter",
+  weight: "400",
+  variable: "--font-brand",
 });
 
 export const metadata = {
@@ -36,7 +41,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${instrumentSerif.variable} ${newsreader.variable} ${montserrat.variable}`}
+      className={`${instrumentSerif.variable} ${newsreader.variable} ${montserrat.variable} ${silkscreen.variable}`}
     >
       <body>
         <ThemeProvider>
