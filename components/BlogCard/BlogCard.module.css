@@ -4,10 +4,10 @@
 }
 
 .category {
-  font-family: var(--font-inter);
+  font-family: var(--font-brand), monospace;
   font-size: 11.5px;
   color: var(--color-accent);
-  font-weight: 600;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-bottom: 10px;
@@ -50,14 +50,11 @@
 }
 
 .guestTag {
-  display: inline-block;
-  font-family: var(--font-inter);
-  font-size: 10.5px;
-  font-weight: 700;
-  color: var(--color-text-secondary);
-  background: var(--color-border);
-  border-radius: 4px;
-  padding: 3px 8px;
+  font-family: var(--font-brand), monospace;
+  font-size: 11.5px;
+  color: var(--color-accent);
+  font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
 }
