@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import { User } from 'lucide-react';
-import PageHeader from '@/components/PageHeader/PageHeader';
+import { User } from "lucide-react";
+import PageHeader from "@/components/PageHeader/PageHeader";
 
 export const metadata = {
   title: "About | Everything TMT",
@@ -12,7 +12,9 @@ export default function AboutPage() {
   return (
     <div className={styles.page}>
       <PageHeader icon={User}>
-      <h1 className={styles.heading}>Making technology law and policy understandable</h1>
+        <h1 className={styles.heading}>
+          Making technology law and policy understandable
+        </h1>
       </PageHeader>
 
       <p className={styles.intro}>
@@ -48,12 +50,12 @@ export default function AboutPage() {
       </p>
 
       <p className={styles.paragraph}>
-        Over the last few years, I&apos;ve explored different corners of TMT law
-        — from intermediary liability and digital privacy to media regulation
+        Over the last few years, I&apos;ve explored different corners of TMT
+        law, from intermediary liability and digital privacy to media regulation
         and platform governance. I&apos;ve interned with policy teams and legal
         organisations working in the tech space, and spent a fair amount of time
         trying to make sense of dense legislation, case law, and regulatory
-        policy. That effort eventually shaped Everything TMT — a public-facing
+        policy. That effort eventually shaped Everything TMT: a public-facing
         project aimed at breaking down the law in a way that&apos;s accessible
         but still legally rigorous.
       </p>
@@ -69,13 +71,17 @@ export default function AboutPage() {
       <p className={styles.paragraph}>
         Apart from academics, I love football, South Indian food and Green Day
         (in no particular order). If you have any suggestions, queries or just
-        want to discuss Tech Law (or football, Green Day or South Indian food —
+        want to discuss Tech Law (or football, Green Day or South Indian food,
         your call), I would love to hear from you!
       </p>
 
-      <div className={styles.sectionLabel}>Contact</div>
-      <a href="mailto:siddharthaiyar9@gmail.com" className={styles.email}>
-        siddharthaiyar9@gmail.com
+      <a
+        href="https://www.linkedin.com/in/siddharth-aiyar-03468921a/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.email}
+      >
+        LinkedIn
       </a>
     </div>
   );
