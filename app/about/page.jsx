@@ -74,6 +74,11 @@ export default function AboutPage() {
         want to discuss Tech Law (or football, Green Day or South Indian food,
         your call), I would love to hear from you!
       </p>
+      <div className={styles.sectionLabel}>Contact</div>
+<div className={styles.contactLinks}>
+  <a href="mailto:siddharthaiyar9@gmail.com" className={styles.email}>
+    Email
+  </a>
 
       <a
         href="https://www.linkedin.com/in/siddharth-aiyar-03468921a/"
