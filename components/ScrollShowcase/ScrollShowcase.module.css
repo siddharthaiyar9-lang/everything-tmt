@@ -1,0 +1,131 @@
+.track {
+  position: relative;
+}
+
+.stage {
+  position: sticky;
+  top: 64px;
+  height: calc(100vh - 64px);
+  overflow: hidden;
+}
+
+.block {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  will-change: opacity;
+}
+
+.bg {
+  position: absolute;
+  inset: 0;
+}
+
+.bgImg {
+  object-fit: cover;
+}
+
+/* Darkens the image on the left so the white text stays readable
+   whatever picture you use. */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(8, 10, 20, 0.78) 0%,
+    rgba(8, 10, 20, 0.45) 55%,
+    rgba(8, 10, 20, 0.2) 100%
+  );
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 24px;
+  color: #fff;
+  will-change: transform;
+}
+
+.label {
+  font-family: var(--font-inter);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0.8;
+  margin-bottom: 16px;
+}
+
+.heading {
+  font-size: clamp(34px, 5.5vw, 68px);
+  line-height: 1.05;
+  max-width: 760px;
+  color: #fff;
+  margin: 0 0 18px;
+}
+
+.text {
+  font-family: var(--font-inter);
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 560px;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0 0 28px;
+}
+
+.links {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 999px;
+  padding: 12px 22px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+  transition: background 0.15s ease;
+}
+
+.link:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 700px) {
+  .text {
+    font-size: 16px;
+  }
+}
+
+/* For visitors who ask their device to reduce motion: no pinning, no
+   fading, just four ordinary stacked sections. */
+@media (prefers-reduced-motion: reduce) {
+  .track {
+    height: auto !important;
+  }
+  .stage {
+    position: static;
+    height: auto;
+    overflow: visible;
+  }
+  .block {
+    position: relative;
+    min-height: 70vh;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+  .content {
+    transform: none !important;
+  }
+}

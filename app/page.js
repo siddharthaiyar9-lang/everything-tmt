@@ -5,6 +5,8 @@ import { getAllExplainers } from "@/lib/mdx";
 import { getSearchIndex } from "@/lib/searchIndex";
 import { topics } from "@/data/topics";
 import styles from "./page.module.css";
+import ScrollShowcase from "@/components/ScrollShowcase/ScrollShowcase";
+import { showcase } from "@/data/showcase";
 
 export default function Home() {
   const explainers = getAllExplainers();
@@ -13,30 +15,7 @@ export default function Home() {
   return (
     <main>
       <Hero searchIndex={searchIndex} />
-
-      <section className={styles.section}>
-        <div className={styles.sectionLabel}>Featured Explainers</div>
-        <div className={styles.grid}>
-          {explainers.map((explainer) => (
-            <ExplainerCard key={explainer.slug} explainer={explainer} />
-          ))}
-        </div>
-      </section>
-
-      <section className={styles.section}>
-        <div className={styles.sectionLabel}>Browse by Topic</div>
-        <div className={styles.topicGrid}>
-          {topics.map((topic) => (
-            <Link
-              key={topic.name}
-              href={`/knowledge-base?category=${encodeURIComponent(topic.name)}`}
-              className={styles.topicPill}
-            >
-              {topic.name}
-            </Link>
-          ))}
-        </div>
-      </section>
+      <ScrollShowcase items={showcase} />
     </main>
   );
 }
