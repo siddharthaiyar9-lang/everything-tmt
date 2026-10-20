@@ -4,6 +4,20 @@
   padding: 40px 24px 96px;
 }
 
+.heroImage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 28px;
+  background: var(--color-border);
+}
+
+.heroImg {
+  object-fit: cover;
+}
+
 .breadcrumb {
   display: flex;
   align-items: center;

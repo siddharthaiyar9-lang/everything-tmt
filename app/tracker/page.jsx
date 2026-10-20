@@ -8,8 +8,8 @@ import TrackerCard from "@/components/TrackerCard/TrackerCard";
 import StatusPill from "@/components/StatusPill/StatusPill";
 import { trackerEntries } from "@/data/tracker";
 import styles from "./page.module.css";
-   import { Landmark } from 'lucide-react';
-   import PageHeader from '@/components/PageHeader/PageHeader';
+import { Landmark } from "lucide-react";
+import PageHeader from "@/components/PageHeader/PageHeader";
 
 export default function TrackerPage() {
   const [regulator, setRegulator] = useState("All");
@@ -63,12 +63,12 @@ export default function TrackerPage() {
   return (
     <div className={styles.page}>
       <PageHeader icon={Landmark}>
-      <h1 className={styles.heading}>India AI Regulation Tracker</h1>
-      <p className={styles.subheading}>
-        A focused look at how India is governing artificial intelligence —
-        across financial regulators, telecom, central government, the judiciary,
-        cybersecurity, competition law, and the states.
-      </p>
+        <h1 className={styles.heading}>India AI Regulation Tracker</h1>
+        <p className={styles.subheading}>
+          Cross-sectoral look at India's AI governance and regulation
+          strategies. Use the filters or the timeline view for a better
+          understanding.
+        </p>
       </PageHeader>
 
       <div className={styles.tabs}>

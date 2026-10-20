@@ -1,21 +1,24 @@
-import { BookOpen } from 'lucide-react';
-import PageHeader from '@/components/PageHeader/PageHeader';
-import BlogCard from '@/components/BlogCard/BlogCard';
-import ExternalWriteupCard from '@/components/ExternalWriteupCard/ExternalWriteupCard';
-import { getAllBlogPosts } from '@/lib/blog';
-import { externalWriting } from '@/data/externalWriting';
-import styles from './page.module.css';
+import { BookOpen } from "lucide-react";
+import PageHeader from "@/components/PageHeader/PageHeader";
+import BlogCard from "@/components/BlogCard/BlogCard";
+import ExternalWriteupCard from "@/components/ExternalWriteupCard/ExternalWriteupCard";
+import { getAllBlogPosts } from "@/lib/blog";
+import { externalWriting } from "@/data/externalWriting";
+import styles from "./page.module.css";
 
 export const metadata = {
-  title: 'Blog | Everything TMT',
-  description: 'Analysis and commentary on technology law, privacy, and AI regulation.',
+  title: "Blog | Everything TMT",
+  description:
+    "Analysis and commentary on technology law, privacy, and AI regulation.",
 };
 
 export default async function BlogPage({ searchParams }) {
   const { category } = await searchParams;
   const allPosts = getAllBlogPosts();
 
-  const posts = category ? allPosts.filter((p) => p.category === category) : allPosts;
+  const posts = category
+    ? allPosts.filter((p) => p.category === category)
+    : allPosts;
 
   return (
     <div className={styles.page}>
@@ -24,15 +27,23 @@ export default async function BlogPage({ searchParams }) {
         <p className={styles.subheading}>
           Analysis and commentary on technology law, privacy, and AI regulation.
           <br />
-          To get these pieces straight to your email ID,{' '}
-          <a href="https://everythingtmt.substack.com" target="_blank" rel="noopener noreferrer">subscribe to my Substack!</a>
+          To get these pieces straight to your email ID,{" "}
+          <a
+            href="https://everythingtmt.substack.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            subscribe to my Substack!
+          </a>
         </p>
       </PageHeader>
 
       {category && (
         <div className={styles.activeFilter}>
           Showing: <strong>{category}</strong>
-          <a href="/blog" className={styles.clearFilter}>Clear</a>
+          <a href="/blog" className={styles.clearFilter}>
+            Clear
+          </a>
         </div>
       )}
 

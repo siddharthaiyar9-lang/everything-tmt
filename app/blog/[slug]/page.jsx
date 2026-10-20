@@ -11,6 +11,7 @@ import TableOfContents from "@/components/TableOfContents/TableOfContents";
 import ReadingProgress from "@/components/ReadingProgress/ReadingProgress";
 import styles from "./page.module.css";
 import { SITE_AUTHOR } from "@/data/site";
+import Image from "next/image";
 
 export function generateStaticParams() {
   return getAllBlogPosts().map((post) => ({ slug: post.slug }));
@@ -48,6 +49,28 @@ export default async function BlogPostPage({ params }) {
 
       <div className={styles.layout}>
         <div className={styles.main}>
+          {frontmatter.image && (
+            <div className={styles.heroImage}>
+              <Image
+                src={frontmatter.image}
+                alt={frontmatter.imageAlt || frontmatter.title}
+                fill
+                sizes="(max-width: 900px) 100vw, 720px"
+                className={styles.heroImg}
+              />
+            </div>
+          )}
+          {frontmatter.image && (
+            <div className={styles.heroImage}>
+              <Image
+                src={frontmatter.image}
+                alt={frontmatter.imageAlt || frontmatter.title}
+                fill
+                sizes="(max-width: 900px) 100vw, 720px"
+                className={styles.heroImg}
+              />
+            </div>
+          )}
           <div className={styles.categoryRow}>
             <span className={styles.category}>{frontmatter.category}</span>
             {isGuest && (

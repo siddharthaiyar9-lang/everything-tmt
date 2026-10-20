@@ -1,8 +1,8 @@
 import ExplainerCard from "@/components/ExplainerCard/ExplainerCard";
 import { getAllExplainers } from "@/lib/mdx";
 import styles from "./page.module.css";
-   import { Brain } from 'lucide-react';
-   import PageHeader from '@/components/PageHeader/PageHeader';
+import { Brain } from "lucide-react";
+import PageHeader from "@/components/PageHeader/PageHeader";
 
 export const metadata = {
   title: "Knowledge Base | Everything TMT",
@@ -25,11 +25,10 @@ export default async function KnowledgeBasePage({ searchParams }) {
   return (
     <div className={styles.page}>
       <PageHeader icon={Brain}>
-      <h1 className={styles.heading}>The Knowledge Base</h1>
-      <p className={styles.subheading}>
-        Long-form, plain-language explainers on Indian technology law — built to
-        read like documentation, not case notes.
-      </p>
+        <h1 className={styles.heading}>The Knowledge Base</h1>
+        <p className={styles.subheading}>
+          Simplified explainers of India's technology law.
+        </p>
       </PageHeader>
 
       {category && (
