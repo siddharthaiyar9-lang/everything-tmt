@@ -16,20 +16,22 @@ export default function Hero({ searchIndex }) {
 
   return (
     <section className={styles.hero}>
-      <h1 className={styles.headline}>
-        Technology law and Policy Explained.
-            </h1>
+      <h1 className={styles.headline}>The Place for Tech Law and Policy</h1>
       <p className={styles.subheading}>
         SImple explainers, India&apos;s AI regulation tracker, podcasts, and
         research on privacy, cybersecurity, and digital regulation.
       </p>
       <div className={styles.actions}>
         <Link href="/knowledge-base" className={styles.primaryButton}>
-          Start Learning <ArrowRight size={15} />
+          Start Learning <ArrowUpRight size={15} />
         </Link>
-        <Link href="/tracker" className={styles.secondaryButton}>
+        <Link href="/tracker" className={styles.primaryButton}>
           Explore AI Regulations <ArrowUpRight size={15} />
         </Link>
+        <Link
+          href="mailto:siddharthaiyar9@gmail.com"
+          className={styles.email}
+        ></Link>
       </div>
       <button
         className={styles.searchWrapper}

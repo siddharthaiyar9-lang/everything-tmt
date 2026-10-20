@@ -1,19 +1,10 @@
-.track {
-  position: relative;
-}
-
-.stage {
-  position: sticky;
-  top: 64px;
-  height: calc(100vh - 64px);
-  overflow: hidden;
-}
-
 .block {
-  position: absolute;
-  inset: 0;
+  position: relative;
+  height: calc(100vh - 64px);
+  min-height: 520px;
   display: flex;
   align-items: center;
+  overflow: hidden;
   will-change: opacity;
 }
 
@@ -46,7 +37,6 @@
   margin: 0 auto;
   padding: 0 24px;
   color: #fff;
-  will-change: transform;
 }
 
 .label {
@@ -108,24 +98,9 @@
   }
 }
 
-/* For visitors who ask their device to reduce motion: no pinning, no
-   fading, just four ordinary stacked sections. */
+/* Visitors who ask their device to reduce motion see no fading. */
 @media (prefers-reduced-motion: reduce) {
-  .track {
-    height: auto !important;
-  }
-  .stage {
-    position: static;
-    height: auto;
-    overflow: visible;
-  }
   .block {
-    position: relative;
-    min-height: 70vh;
     opacity: 1 !important;
-    pointer-events: auto !important;
-  }
-  .content {
-    transform: none !important;
   }
 }
