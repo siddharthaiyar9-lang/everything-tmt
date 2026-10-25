@@ -692,7 +692,23 @@ export const trackerEntries = [
     id: "niti-aayog-data-centre-eval-framework-2026",
     title:
       "Data Centre Evaluation Framework to Help States Plan for Sustainable Growth",
+    regulator: "NITI Aayog",
+    policyArea: "Data Centres",
+    date: "2026-10-14",
+    dateLabel: "14 Oct 2026",
     status: "Advisory/Guidance",
+    summary:
+      "A NITI Aayog proposal on a framework to evaluate data-centre proposals by balancing investment, infrastructure readiness, economic value and long-term sustainability.",
+    keyPoints: [
+      "Core approach: Assess projects before approval, identify infrastructure and resource constraints early, compare proposals consistently, and link incentives to measurable outcomes",
+      "Pillar 1: Power and Energy: Assess total campus electricity demand, grid capacity, transmission and substation upgrades, firm power supply, renewable energy and storage arrangements. Set commissioning milestones and monitor power usage, efficiency and resilience.",
+      "Pillar 2: Water and Cooling: Evaluate long-term water availability, basin stress, competing users and peak-season demand. Prioritise fit-for-use water, recycled and non-potable sources, efficient cooling technologies, and safeguards against straining existing freshwater supplies.",
+      "Pillar 3: Siting and Environmental Sustainability: Assess land suitability, climate and disaster risks, connectivity, environmental impacts and community concerns before construction. Plan for waste management, decommissioning and lifecycle liabilities.",
+      "Pillar 4: Economic and Strategic Value: Calculate the project's net economic contribution after accounting for State incentives and support. Assess local hiring, skills development, research, domestic procurement, vendor development and indigenous technology, and link incentives to measurable outcomes.",
+      "Pillar 5: Policy, Governance and Implementation: Assign each approval condition to a responsible entity, establish a digital single-window clearance mechanism, publish approval timelines and track compliance, incentives, resource use and disaster-recovery arrangements.",
+      "State Government's role: Coordinate departments and utilities, verify infrastructure readiness, define approval conditions, designate suitable data-centre zones, and monitor delivery against agreed milestones.",
+      "Central Government's role: Develop common standards, templates and guidance for grid assessments, energy and water efficiency, incentives, approval processes and compliance monitoring.",
+    ],
   },
   {
     id: "meity-genai-advisory-2024",
