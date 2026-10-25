@@ -688,4 +688,10 @@ export const trackerEntries = [
     source:
       "https://www.trai.gov.in/sites/default/files/2026-09/PR_No119of2026.pdf",
   },
+  {
+    id: "niti-aayog-data-centre-eval-framework-2026",
+    title:
+      "Data Centre Evaluation Framework to Help States Plan for Sustainable Growth",
+    status: "Advisory/Guidance"
+  }
 ];
