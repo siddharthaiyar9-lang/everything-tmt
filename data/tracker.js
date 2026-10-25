@@ -489,6 +489,10 @@ export const trackerEntries = [
       "A discussion paper proposing a three-pillar framework to balance global data collaboration for AI with national data sovereignty, built around a four-tier, risk-based data matrix.",
     keyPoints: [
       "Governance architecture rests on three pillars: compatibility, accountability and coordination.",
+      "Compatibility = Shared technical standards, protocols, identity frameworks and metadata. Ensure data retains meaning across jurisdictions.",
+      "Accountability = Minimum standards (like ISO 27001) that are fluid instead of static; i.e., they measure continuous, risk-adaptive assurance as AI systems and their risks evolve.",
+      "Coordination = Nodal authorities, review mechanisms, and institutional cooperation between jurisdictions while respecting sovereign authority.",
+      "Three pillars are supported by a four-fold risk based division of data:",
       "Tier 1, aggregate or statistical data: open, low-friction transfers.",
       "Tier 2, functional data: controlled transfers governed by differential privacy and contractual safeguards.",
       "Tier 3, controlled data: high-risk transfers subject to strict audit trails.",
