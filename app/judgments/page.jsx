@@ -5,8 +5,8 @@ import FilterGroup from "@/components/FilterGroup/FilterGroup";
 import JudgmentCard from "@/components/JudgmentCard/JudgmentCard";
 import { judgments } from "@/data/judgments";
 import styles from "./page.module.css";
-   import { Gavel } from 'lucide-react';
-   import PageHeader from '@/components/PageHeader/PageHeader';
+import { Gavel } from "lucide-react";
+import PageHeader from "@/components/PageHeader/PageHeader";
 
 export default function JudgmentsPage() {
   const [practiceArea, setPracticeArea] = useState("All");
@@ -54,12 +54,11 @@ export default function JudgmentsPage() {
   return (
     <div className={styles.page}>
       <PageHeader icon={Gavel}>
-      <h1 className={styles.heading}>Judgments Tracker</h1>
-      <p className={styles.subheading}>
-        Indian court decisions on artificial intelligence and data privacy —
-        copyright and AI training, deepfakes and personality rights, AI in the
-        judiciary, and the evolving law of data protection and surveillance.
-      </p>
+        <h1 className={styles.heading}>Judgments Tracker</h1>
+        <p className={styles.subheading}>
+          Indian court decisions on matters involving data protection and
+          emerging tech.
+        </p>
       </PageHeader>
 
       <div className={styles.filterBar}>

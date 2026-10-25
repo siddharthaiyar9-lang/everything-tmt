@@ -14,6 +14,10 @@ export default function PodcastPage() {
     <div className={styles.page}>
       <PageHeader icon={Mic} label="Podcast">
         <h1 className={styles.heading}>The Everything TMT Podcast</h1>
+        <p className={styles.subheading}>
+          Conversations with some of the foremost voices in the tech law and
+          policy space. Follow along on Spotify!
+        </p>
       </PageHeader>
 
       <div className={styles.grid}>
