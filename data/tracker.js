@@ -700,7 +700,7 @@ export const trackerEntries = [
     policyArea: "Data Centres",
     date: "2026-10-14",
     dateLabel: "14 Oct 2026",
-    status: "Advisory/Guidance",
+    status: "Advisory / Guidance",
     summary:
       "A NITI Aayog proposal on a framework to evaluate data-centre proposals by balancing investment, infrastructure readiness, economic value and long-term sustainability.",
     keyPoints: [
