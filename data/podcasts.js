@@ -8,6 +8,8 @@ export const podcasts = [
     id: 1,
     guestLabel: "Episode 1",
     title: "In Conversation With Kriti Trehan",
+    description:
+      "What does it take to make sense of technology in a world where regulation can barely keep up? Tech policy lawyer Kriti Trehan, head of Data & Co, joined us to unpack her decade-long journey across AI, privacy, and digital regulation, sharing candid insights on the ideas, experiences, and people shaping India’s evolving tech policy landscape.",
     parts: [
       {
         label: "Part 1: Careers in TMT Law",
@@ -27,6 +29,8 @@ export const podcasts = [
     id: 2,
     guestLabel: "Episode 2",
     title: "In Conversation With Dr. Srinivas Yanamandra",
+    description:
+      "What does it mean to think beyond the rulebook? Dr. Srinivas Yanamandra, a compliance specialist, regulatory researcher, and fintech policy thinker who has led compliance functions at globally renowned institutions, joined us to explore the evolving relationship between finance, technology, and regulation, and the ethical questions shaping the future of financial innovation.",
     parts: [
       {
         label: "Part 1: Careers in Compliance and Policy",
@@ -42,6 +46,8 @@ export const podcasts = [
     id: 3,
     guestLabel: "Episode 3",
     title: "In Conversation With Vibhav Mithal",
+    description:
+      "Vibhav Mithal, an IP litigator and AI governance expert, has worked on landmark disputes before India’s Supreme Court and Delhi High Court while contributing to the country’s emerging responsible AI frameworks. In this conversation, we explored how India’s AI governance framework is taking shape, what responsible AI means in practice, and how artificial intelligence is changing the legal profession.",
     parts: [
       {
         label: "Listen on Spotify",
@@ -53,7 +59,9 @@ export const podcasts = [
     id: 3,
     guestLabel: "Episode 4",
     title:
-      'Anthropomorphism, "Empathetic" AI, and the Future of Human Autonomy',
+      "Anthropomorphism, 'Empathetic' AI, and the Future of Human Autonomy",
+    description:
+      "AI systems are increasingly designed to remember us, mirror our emotions, and feel more human. But when does that connection become manipulation, and who is responsible when it causes harm? On the Everything TMT Podcast, Sriya Sridhar (CeRAI, IIT Madras) and Prof. Krishna Deo Singh Chauhan (CSCAILR, JGLS) joined us to explore anthropomorphism, emotional manipulation, and the legal and ethical challenges posed by social AI.",
     parts: [
       {
         label: "Listen on Spotify",
