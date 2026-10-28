@@ -12,9 +12,7 @@ export default function AboutPage() {
   return (
     <div className={styles.page}>
       <PageHeader icon={User} label="About">
-        <h1 className={styles.heading}>
-          Making technology law and policy understandable
-        </h1>
+        <h1 className={styles.heading}>About Everything TMT</h1>
       </PageHeader>
 
       <p className={styles.intro}>
@@ -80,6 +78,7 @@ export default function AboutPage() {
         <a href="mailto:siddharthaiyar9@gmail.com" className={styles.email}>
           Email
         </a>
+        <div></div>
         <a
           href="https://www.linkedin.com/in/siddharth-aiyar-03468921a/"
           target="_blank"

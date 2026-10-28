@@ -16,11 +16,8 @@ export default function Hero({ searchIndex }) {
 
   return (
     <section className={styles.hero}>
-      <h1 className={styles.headline}>The Place for Tech Law and Policy</h1>
-      <p className={styles.subheading}>
-        SImple explainers, India&apos;s AI regulation tracker, podcasts, and
-        research on privacy, cybersecurity, and digital regulation.
-      </p>
+      <h1 className={styles.headline}>Welcome to Everything TMT</h1>
+      <p className={styles.subheading}>The place for Tech Law and Policy.</p>
       <div className={styles.actions}>
         <Link href="/knowledge-base" className={styles.primaryButton}>
           Start Learning <ArrowUpRight size={15} />
