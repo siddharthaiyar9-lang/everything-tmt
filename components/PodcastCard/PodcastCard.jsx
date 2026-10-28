@@ -23,6 +23,9 @@ export default function PodcastCard({ episode }) {
         <div className={styles.body}>
           <div className={styles.guestLabel}>{episode.guestLabel}</div>
           <h2 className={styles.title}>{episode.title}</h2>
+          {episode.description && (
+            <p className={styles.description}>{episode.description}</p>
+          )}
           <div className={styles.parts}>
             {episode.parts.map((part) => (
               <a

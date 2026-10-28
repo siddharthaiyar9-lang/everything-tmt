@@ -45,6 +45,14 @@
   color: var(--color-text);
   margin: 0 0 16px;
 }
+.description {
+  font-family: var(--font-inter);
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: var(--color-text-secondary);
+  max-width: 560px;
+  margin: 0 0 18px;
+}
 
 .parts {
   display: flex;
