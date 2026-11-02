@@ -1,6 +1,5 @@
 import { notFound } from 'next/navigation';
-import Image from 'next/image';
-import { ChevronDown } from 'lucide-react';
+import PageHero from '@/components/PageHero/PageHero';
 import BlogCard from '@/components/BlogCard/BlogCard';
 import ExplainerCard from '@/components/ExplainerCard/ExplainerCard';
 import ExternalWriteupCard from '@/components/ExternalWriteupCard/ExternalWriteupCard';
@@ -43,7 +42,6 @@ export default async function VerticalPage({ params }) {
   const v = VERTICALS[vertical];
   if (!v) notFound();
 
-  const Icon = v.icon;
   const inVertical = (item) => Array.isArray(item.verticals) && item.verticals.includes(vertical);
   const posts = getAllBlogPosts().filter(inVertical);
   const explainers = getAllExplainers().filter(inVertical);
@@ -51,18 +49,7 @@ export default async function VerticalPage({ params }) {
 
   return (
     <>
-      <section className={styles.hero}>
-        {v.image && (
-          <Image src={v.image} alt="" fill priority sizes="100vw" className={styles.heroImg} style={{ objectPosition: v.imagePosition || 'center' }} />
-        )}
-        <div className={styles.overlay} />
-        <div className={styles.heroContent}>
-          <span className={styles.heroIcon} aria-hidden="true"><Icon size={22} strokeWidth={1.75} /></span>
-          <h1 className={styles.heroTitle}>{v.label}</h1>
-          <p className={styles.heroText}>{v.description}</p>
-        </div>
-        <a href="#vertical-content" className={styles.scrollCue} aria-label="Scroll to content"><ChevronDown size={24} /></a>
-      </section>
+      <PageHero icon={v.icon} title={v.label} text={v.description} image={v.image} imagePosition={v.imagePosition} scrollTo="vertical-content" />
 
       <div id="vertical-content" className={styles.page}>
         <Row label="Latest writing">
