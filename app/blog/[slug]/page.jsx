@@ -12,6 +12,7 @@ import ReadingProgress from "@/components/ReadingProgress/ReadingProgress";
 import styles from "./page.module.css";
 import { SITE_AUTHOR } from "@/data/site";
 import Image from "next/image";
+import { VERTICALS } from '@/data/verticals';
 
 export function generateStaticParams() {
   return getAllBlogPosts().map((post) => ({ slug: post.slug }));
@@ -38,6 +39,7 @@ export default async function BlogPostPage({ params }) {
   const { frontmatter, content } = post;
   const headings = extractHeadings(content);
   const isGuest = frontmatter.author && frontmatter.author !== SITE_AUTHOR;
+  const verticalKeys = Array.isArray(frontmatter.verticals) ? frontmatter.verticals.filter((v) => VERTICALS[v]) : [];
 
   return (
     <div className={styles.page}>

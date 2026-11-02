@@ -24,25 +24,25 @@ export const RESOURCES = {
 // and so on) and the value you put in a post's `verticals` frontmatter.
 export const VERTICALS = {
   law: {
-    label: 'Technology Law',
+    label: 'Technology Law', short: 'Law',
     icon: Scale,
     description: 'Legal frameworks governing technology, including data protection, privacy, AI regulation, intermediary liability, intellectual property, telecom and cybersecurity.',
     resources: ['knowledgeBase', 'judgments'],
   },
   policy: {
-    label: 'Technology Policy',
+    label: 'Technology Policy', short: 'Policy',
     icon: Compass,
     description: 'Public policy concerning technological development, including AI policy, digital sovereignty, industrial policy, digital public infrastructure, innovation and international technology governance.',
     resources: ['tracker'],
   },
   society: {
-    label: 'Technology and Society',
+    label: 'Technology and Society', short: 'Society',
     icon: Users,
     description: 'The social, political and cultural implications of technology, including digital democracy, algorithmic discrimination, surveillance, digital inclusion and the future of work.',
     resources: [],
   },
   markets: {
-    label: 'Technology and Markets',
+    label: 'Technology and Markets', short: 'Markets',
     icon: TrendingUp,
     description: 'The economic implications of technological development, including platform economics, competition, market concentration, fintech, AI economics and technology infrastructure.',
     resources: [],
