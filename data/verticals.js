@@ -30,9 +30,9 @@ export const VERTICALS = {
     resources: ['knowledgeBase', 'judgments'],
   },
   policy: {
-    label: 'Technology Policy', short: 'Policy',
+    label: 'Technology and Institutions', short: 'Policy',
     icon: Compass,
-    description: 'Public policy concerning technological development, including AI policy, digital sovereignty, industrial policy, digital public infrastructure, innovation and international technology governance.',
+    description: 'governments, public institutions and international organisations shape, govern and respond to technological development.',
     resources: ['tracker'],
   },
   society: {
