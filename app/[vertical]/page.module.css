@@ -1,111 +1,12 @@
-.page {
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 56px 24px 96px;
-}
-
-.pill {
-  display: inline-block;
-  font-family: var(--font-inter);
-  font-size: 11px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--color-accent);
-  border: 1px solid color-mix(in srgb, var(--color-accent) 20%, transparent);
-  background: color-mix(in srgb, var(--color-accent) 5%, transparent);
-  border-radius: 999px;
-  padding: 4px 10px;
-  font-weight: 600;
-}
-
-.heading {
-  font-size: 44px;
-  color: var(--color-text);
-  margin: 18px 0 12px;
-}
-
-.subheading {
-  font-family: var(--font-inter);
-  font-size: 16px;
-  color: var(--color-text-secondary);
-  max-width: 600px;
-  margin: 0 0 40px;
-}
-
-.activeFilter {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-family: var(--font-inter);
-  font-size: 13.5px;
-  color: var(--color-text-secondary);
-  margin-bottom: 24px;
-}
-
-.clearFilter {
-  color: var(--color-accent);
-  font-weight: 600;
-  font-size: 12.5px;
-}
-.subheading a {
-  color: var(--color-accent);
-  text-decoration: underline;
-  text-decoration-color: color-mix(
-    in srgb,
-    var(--color-accent) 40%,
-    transparent
-  );
-  text-underline-offset: 2px;
-  font-weight: 600;
-}
-.sectionLabel {
-  font-family: var(--font-inter);
-  font-size: 12px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--color-text-secondary);
-  font-weight: 600;
-  margin: 48px 0 14px;
-}
-.subheading a:hover {
-  text-decoration-color: var(--color-accent);
-}
-.empty {
-  font-family: var(--font-inter);
-  font-size: 14px;
-  color: var(--color-text-secondary);
-}
-.comingSoon {
-  font-family: var(--font-inter);
-  font-size: 14px;
-  color: var(--color-text-secondary);
-  border: 1px dashed var(--color-border);
-  border-radius: 12px;
-  padding: 22px 24px;
-  margin: 0;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 16px;
-}
 .banner {
   position: relative;
   width: 100%;
-  aspect-ratio: 3 / 1;
-  border-radius: 12px;
+  height: clamp(160px, 18vw, 280px);
   overflow: hidden;
-  margin-bottom: 32px;
   background: var(--color-border);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .bannerImg {
   object-fit: cover;
-}
-
-@media (max-width: 700px) {
-  .banner {
-    aspect-ratio: 16 / 9;
-  }
 }
