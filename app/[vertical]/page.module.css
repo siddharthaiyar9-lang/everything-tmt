@@ -7,7 +7,6 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  /* Shown when a vertical has no image, so the hero still looks intentional. */
   background: linear-gradient(135deg, #0f1b3d, #2d5bff);
 }
 
@@ -16,8 +15,6 @@
   z-index: -2;
 }
 
-/* Darkens the picture so the white text stays readable. The last number in
-   each rgba() is the strength: raise it for darker, lower it to show more art. */
 .overlay {
   position: absolute;
   inset: 0;
