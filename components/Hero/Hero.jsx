@@ -17,7 +17,13 @@ export default function Hero({ searchIndex }) {
   return (
     <section className={styles.hero}>
       <h1 className={styles.headline}>Welcome to Everything TMT</h1>
-      <p className={styles.subheading}>The place for Tech Law and Policy.</p>
+      <p className={styles.subheading}>The idea behind Everything TMT is simple. To create an ecosystem we can better understand and discuss how technology is governed here in India.</p>
+      <div className={styles.description}>
+        Everything TMT will be built around three pillars: 
+        1. Power: Who has power in the technology ecosystem, and how is it wielded?
+        2. Accountability: Who is accountable for consequences of technology, and how is that accountability enforced?
+        3. Rights: What rights do people have in the technology ecosystem, and how are those rights protected?
+      </div>
       <div className={styles.actions}>
         <Link href="/knowledge-base" className={styles.primaryButton}>
           Start Learning <ArrowUpRight size={15} />
@@ -25,10 +31,9 @@ export default function Hero({ searchIndex }) {
         <Link href="/tracker" className={styles.primaryButton}>
           Explore AI Regulations <ArrowUpRight size={15} />
         </Link>
-        <Link
-          href="mailto:siddharthaiyar9@gmail.com"
-          className={styles.email}
-        ></Link>
+        <Link href="mailto:siddharthaiyar9@gmail.com" className={styles.email}>
+        Talk to me! <ArrowRight size={15} />
+        </Link>
       </div>
       <button
         className={styles.searchWrapper}
