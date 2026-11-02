@@ -1,3 +1,9 @@
+.page {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 56px 24px 96px;
+}
+
 .banner {
   position: relative;
   width: 100%;
@@ -10,6 +16,46 @@
 
 .bannerImg {
   object-fit: cover;
+}
+
+.heading {
+  font-size: 44px;
+  color: var(--color-text);
+  margin: 18px 0 12px;
+}
+
+.subheading {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  color: var(--color-text-secondary);
+  max-width: 600px;
+  margin: 0 0 40px;
+}
+
+.sectionLabel {
+  font-family: var(--font-inter);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  font-weight: 600;
+  margin: 48px 0 14px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.comingSoon {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  border: 1px dashed var(--color-border);
+  border-radius: 12px;
+  padding: 22px 24px;
+  margin: 0;
 }
 
 @media (max-width: 700px) {
