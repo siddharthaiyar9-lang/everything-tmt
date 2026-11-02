@@ -1,12 +1,19 @@
 .banner {
   position: relative;
   width: 100%;
-  height: clamp(160px, 18vw, 280px);
+  aspect-ratio: 3 / 1;
+  border-radius: 12px;
   overflow: hidden;
+  margin-bottom: 32px;
   background: var(--color-border);
-  border-bottom: 1px solid var(--color-border);
 }
 
 .bannerImg {
   object-fit: cover;
+}
+
+@media (max-width: 700px) {
+  .banner {
+    aspect-ratio: 16 / 9;
+  }
 }
