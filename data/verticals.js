@@ -32,7 +32,7 @@ export const VERTICALS = {
   policy: {
     label: 'Technology and Institutions', short: 'Policy',
     icon: Compass,
-    description: 'governments, public institutions and international organisations shape, govern and respond to technological development.',
+    description: 'How governments, public institutions and international organisations shape, govern and respond to technological development.',
     resources: ['tracker'],
   },
   society: {
