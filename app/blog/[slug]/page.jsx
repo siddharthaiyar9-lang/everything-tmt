@@ -1,18 +1,18 @@
-import { MDXRemote } from "next-mdx-remote/rsc";
-import { notFound } from "next/navigation";
-import Link from "next/link";
-import { Clock, Calendar, User, ChevronRight } from "lucide-react";
-import remarkGfm from "remark-gfm";
-import rehypeSlug from "rehype-slug";
-import { getBlogPostBySlug, getAllBlogPosts } from "@/lib/blog";
-import { extractHeadings } from "@/lib/toc";
-import { mdxComponents } from "@/components/mdx";
-import TableOfContents from "@/components/TableOfContents/TableOfContents";
-import ReadingProgress from "@/components/ReadingProgress/ReadingProgress";
-import styles from "./page.module.css";
-import { SITE_AUTHOR } from "@/data/site";
-import Image from "next/image";
+import { MDXRemote } from 'next-mdx-remote/rsc';
+import { notFound } from 'next/navigation';
+import Link from 'next/link';
+import Image from 'next/image';
+import { Clock, Calendar, User, ChevronRight } from 'lucide-react';
+import remarkGfm from 'remark-gfm';
+import rehypeSlug from 'rehype-slug';
+import { getBlogPostBySlug, getAllBlogPosts } from '@/lib/blog';
+import { extractHeadings } from '@/lib/toc';
+import { SITE_AUTHOR } from '@/data/site';
 import { VERTICALS } from '@/data/verticals';
+import { mdxComponents } from '@/components/mdx';
+import TableOfContents from '@/components/TableOfContents/TableOfContents';
+import ReadingProgress from '@/components/ReadingProgress/ReadingProgress';
+import styles from './page.module.css';
 
 export function generateStaticParams() {
   return getAllBlogPosts().map((post) => ({ slug: post.slug }));
@@ -53,32 +53,16 @@ export default async function BlogPostPage({ params }) {
         <div className={styles.main}>
           {frontmatter.image && (
             <div className={styles.heroImage}>
-              <Image
-                src={frontmatter.image}
-                alt={frontmatter.imageAlt || frontmatter.title}
-                fill
-                sizes="(max-width: 900px) 100vw, 720px"
-                className={styles.heroImg}
-              />
+              <Image src={frontmatter.image} alt={frontmatter.imageAlt || frontmatter.title} fill sizes="(max-width: 900px) 100vw, 720px" className={styles.heroImg} />
             </div>
           )}
-          {frontmatter.image && (
-            <div className={styles.heroImage}>
-              <Image
-                src={frontmatter.image}
-                alt={frontmatter.imageAlt || frontmatter.title}
-                fill
-                sizes="(max-width: 900px) 100vw, 720px"
-                className={styles.heroImg}
-              />
-            </div>
-          )}
+
           <div className={styles.categoryRow}>
             <span className={styles.category}>{frontmatter.category}</span>
-            {isGuest && (
-              <span className={styles.guestTag}>Guest Contributor</span>
-            )}
+            {verticalKeys.map((v) => (<Link key={v} href={`/${v}`} className={styles.verticalTag}>{VERTICALS[v].short}</Link>))}
+            {isGuest && <span className={styles.guestTag}>Guest Contributor</span>}
           </div>
+
           <h1 className={styles.title}>{frontmatter.title}</h1>
 
           <div className={styles.meta}>
@@ -94,16 +78,7 @@ export default async function BlogPostPage({ params }) {
           </div>
 
           <article id="article-content" className={styles.content}>
-            <MDXRemote
-              source={content}
-              components={mdxComponents}
-              options={{
-                mdxOptions: {
-                  remarkPlugins: [remarkGfm],
-                  rehypePlugins: [rehypeSlug],
-                },
-              }}
-            />
+            <MDXRemote source={content} components={mdxComponents} options={{ mdxOptions: { remarkPlugins: [remarkGfm], rehypePlugins: [rehypeSlug] } }} />
           </article>
         </div>
 
