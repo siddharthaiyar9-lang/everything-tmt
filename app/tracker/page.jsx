@@ -63,7 +63,7 @@ export default function TrackerPage() {
   return (
     <div className={styles.page}>
       <PageHeader icon={Landmark}>
-        <h1 className={styles.heading}>India AI Regulation Tracker</h1>
+        <h1 className={styles.heading}>India AI Governance Tracker</h1>
         <p className={styles.subheading}>
           Cross-sectoral look at India's AI governance and regulation
           strategies. Use the filters or the timeline view for a better
