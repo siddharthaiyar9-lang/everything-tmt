@@ -1,14 +1,9 @@
-// No 'use client' here — this component has no interactivity (no state,
-// no click handlers), so Next.js can render it once on the server and
-// send plain HTML to the browser. Faster, and less JavaScript shipped.
-
 import Link from 'next/link';
-import { NAV_LINKS } from '../../data/navigation.js';
+import { NAV_LINKS, RESOURCE_LINKS } from '@/data/navigation';
 import styles from './Footer.module.css';
 
-// The footer's "Explore" column skips Home — no site footer needs to
-// link back to itself — everything else comes straight from the same
-// NAV_LINKS array the Navbar uses, so the two can never drift apart.
+// The "Explore" column mirrors the main nav (minus Home). The "Resources"
+// column holds the tools that are no longer in the nav.
 const EXPLORE_LINKS = NAV_LINKS.filter((link) => link.href !== '/');
 
 export default function Footer() {
@@ -26,6 +21,14 @@ export default function Footer() {
           <div>
             <div className={styles.columnTitle}>Explore</div>
             {EXPLORE_LINKS.map((link) => (
+              <Link key={link.href} href={link.href} className={styles.footerLink}>
+                {link.label}
+              </Link>
+            ))}
+          </div>
+          <div>
+            <div className={styles.columnTitle}>Resources</div>
+            {RESOURCE_LINKS.map((link) => (
               <Link key={link.href} href={link.href} className={styles.footerLink}>
                 {link.label}
               </Link>

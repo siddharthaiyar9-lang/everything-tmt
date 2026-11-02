@@ -1,13 +1,8 @@
 import { Scale, Compass, Users, TrendingUp } from 'lucide-react';
 
-// Resources that sit alongside the writing. Defined once so the Research
-// page (step 2) and each vertical page can reuse them.
-export const RESOURCES = {
-  knowledgeBase: {
-    title: 'Knowledge Base',
-    description: 'Long-form, plain-language explainers on Indian technology law, starting with the IT Act and the DPDP Act.',
-    href: '/knowledge-base',
-  },
+// Tools and databases. These are not research, so they get their own row
+// on the vertical pages that list them (see `trackers` below).
+export const TRACKERS = {
   tracker: {
     title: 'India AI Governance Tracker',
     description: 'Laws, policies, strategies and institutional arrangements shaping AI governance in India, filterable by regulator, status and policy area.',
@@ -20,31 +15,38 @@ export const RESOURCES = {
   },
 };
 
-// The four editorial verticals. Each key is the page URL (/law, /policy,
-// and so on) and the value you put in a post's `verticals` frontmatter.
+// The four editorial verticals. The key is the page URL (/law, /policy...)
+// and the value used in `verticals` frontmatter and data files.
 export const VERTICALS = {
   law: {
-    label: 'Technology Law', short: 'Law',
+    label: 'Technology Law',
+    short: 'Law',
     icon: Scale,
+    image: '/verticals/law.jpg',
     description: 'Legal frameworks governing technology, including data protection, privacy, AI regulation, intermediary liability, intellectual property, telecom and cybersecurity.',
-    resources: ['knowledgeBase', 'judgments'],
+    trackers: ['judgments'],
   },
   policy: {
-    label: 'Technology and Institutions', short: 'Policy',
+    label: 'Technology and Institutions',
+    short: 'Policy',
     icon: Compass,
-    description: 'How governments, public institutions and international organisations shape, govern and respond to technological development.',
-    resources: ['tracker'],
+    image: '/verticals/policy.jpg',
+    description: 'Public policy concerning technological development, including AI policy, digital sovereignty, industrial policy, digital public infrastructure, innovation and international technology governance.',
+    trackers: ['tracker'],
   },
   society: {
-    label: 'Technology and Society', short: 'Society',
+    label: 'Technology and Society',
+    short: 'Society',
     icon: Users,
+    image: '/verticals/society.jpg',
     description: 'The social, political and cultural implications of technology, including digital democracy, algorithmic discrimination, surveillance, digital inclusion and the future of work.',
-    resources: [],
+    trackers: [],
   },
   markets: {
-    label: 'Technology and Markets', short: 'Markets',
+    label: 'Technology and Markets',
+    short: 'Markets',
     icon: TrendingUp,
     description: 'The economic implications of technological development, including platform economics, competition, market concentration, fintech, AI economics and technology infrastructure.',
-    resources: [],
+    trackers: [],
   },
 };

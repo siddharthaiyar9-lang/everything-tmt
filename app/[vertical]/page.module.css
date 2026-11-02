@@ -75,6 +75,15 @@
   font-size: 14px;
   color: var(--color-text-secondary);
 }
+.comingSoon {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  border: 1px dashed var(--color-border);
+  border-radius: 12px;
+  padding: 22px 24px;
+  margin: 0;
+}
 
 .grid {
   display: grid;
