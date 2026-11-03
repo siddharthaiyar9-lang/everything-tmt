@@ -9,6 +9,7 @@ export const externalWriting = [
     publication: "Constitutional Law and Philosophy",
     url: "https://indconlawphil.wordpress.com/2026/08/07/censorship-by-way-of-platform-architecture-on-the-telegram-whatsapp-and-bitchat-executive-orders-guest-post/",
     date: "2026-08-07",
+    vertical: ["law"],
     dateLabel: "7 Aug 2026",
     type: "Guest Post",
   },
@@ -18,6 +19,7 @@ export const externalWriting = [
     url: "https://datalawpolicy.com/the-policy-pawprint/f/the-digital-sovereignty-bandwagon-part-1",
     date: "2026-08-10",
     dateLabel: "2026",
+    vertical: ["policy", "markets", "law"],
     type: "Series",
   },
   {
@@ -26,6 +28,7 @@ export const externalWriting = [
     url: "https://datalawpolicy.com/the-policy-pawprint/f/the-digital-sovereignty-bandwagon-part-2",
     date: "2026-08-13",
     dateLabel: "2026",
+    vertical: ["policy", "markets", "law"],
     type: "Series",
   },
   {
@@ -34,6 +37,7 @@ export const externalWriting = [
     url: "https://datalawpolicy.com/the-policy-pawprint/f/the-digital-sovereignty-bandwagon-part-3",
     date: "2026-08-16",
     dateLabel: "2026",
+    vertical: ["policy", "markets", "law"],
     type: "Series",
   },
   {
@@ -42,6 +46,7 @@ export const externalWriting = [
     url: "https://datalawpolicy.com/the-policy-pawprint/f/the-digital-sovereignty-bandwagon-part-4",
     date: "2026-08-19",
     dateLabel: "2026",
+    vertical: ["policy", "markets", "law"],
     type: "Series",
   },
   {
@@ -50,6 +55,7 @@ export const externalWriting = [
     url: "https://www.indicpacific.com/post/lost-in-translation-the-limits-of-converting-law-to-code",
     date: "2026-10-12",
     datelable: "2026",
+    vertical: ["law"],
     type: "Blog",
   },
 ];
