@@ -9,13 +9,13 @@ export const HEROES = {
     gradient: 'linear-gradient(135deg, #0b3d3a, #2d9c8f)',
   },
   blog: {
-    image: null, // e.g. '/hero/blog.jpg'
-    imagePosition: 'center',
+    image: 'heroes/temple.jpg', // e.g. '/hero/blog.jpg'
+    imagePosition: '20% center',
     gradient: 'linear-gradient(135deg, #2b1055, #7597de)',
   },
   podcast: {
-    image: null,
-    imagePosition: 'center',
+    image: 'heroes/guru.jpg',
+    imagePosition: '20% center',
     gradient: 'linear-gradient(135deg, #0f1b3d, #2d5bff)',
   },
   about: {
