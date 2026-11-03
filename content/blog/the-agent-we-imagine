@@ -1,0 +1,56 @@
+---
+title: "The Agent We Imagine"
+description: "Humans have a tendency to attribute humanity and conscience to the inanimate. It's what makes us human. It's also what makes us vulnerable to harms posed by AI."
+category: "AI"
+tags: ["AI", "Capitalism"]
+verticals: ["society"]
+date: "11 Oct 2026"
+author: "Siddharth Aiyar"
+readingTime: "11 min read"
+---
+[This piece builds on a conversation about AI, simulated empathy, and the policy questions that emerge when machines begin to feel a little too human. I explore these questions in the latest episode of Everything TMT with Professor Krishna Deo Singh Chauhan and Sriya Sridhar.]
+
+Somewhere right now, someone is typing "please" to a chatbot. Someone else is apologising to one for a badly worded question. A third person has told a model something they have not told their spouse.
+
+None of these people believe the software is alive. They do it anyway, because the pull is far older, and runs far deeper than the technology. It’s the same pull that makes us worship the forest and the trees, and now, it runs further up the chain than one can estimate. It shapes what companies build, what the press writes, and increasingly what regulators draft.
+
+The argument here is simple. Anthropomorphism is not a user error to be corrected through disclosure. It is a shared bias: users have it, companies design for it, lawmakers legislate under it. And a regulatory regime built on human-like framing ends up aiming at an imagined agent instead of at the design decisions and the people who make them.
+
+A bias, not a mistake
+The psychology of anthropomorphism is mapped out. Nicholas Epley's three-factor account holds that we attribute minds to non-human things when three conditions are met: the thing shows human-like cues, we need to predict what it will do next, and we want company. A language model satisfies all three at once. It speaks in the first person, its internals are opaque to the person using it, and it is available at three in the morning.
+
+Reeves and Nass showed decades ago that people apply social rules to computers reflexively — politeness, reciprocity, flattery — and that they do so while sincerely denying that they do. Weizenbaum watched the same thing happen to ELIZA in 1966, with a program that did nothing but reflect sentences back as questions. His secretary asked him to leave the room so she could talk to it privately.
+
+Two things follow. First, the trigger is language, and a large language model is nothing but language. Whatever else these systems are, they are optimised to produce exactly the cue that switches on the attribution of mind. Second, knowing better does not help. Weizenbaum's users knew ELIZA was a program. The effect survives the knowledge, which is the first problem for anyone hoping that a disclosure requirement will fix this.
+
+The design choice
+It matters whether the human-likeness is a by-product or a decision. Some of it is unavoidable. Build a system that produces fluent prose and people will read a mind into it. That is emergent, and nobody is culpable for it.
+
+The rest is chosen, from the name, to the first-person voice, or the simulated hesitation and the simulated warmth. The companion products sold explicitly on the promise of a relationship. These are decisions taken by product teams who are measured on engagement, and engagement is exactly what the bias delivers. 
+
+In 2025 Anthropic gave some Claude models the ability to end a conversation with a persistently abusive user. Now Claude does not actually care if a user is being abusive; Anthropic's internal studies were categorically clear in that regard. Nonetheless, Anthropic framed it as a matter of model welfare, said it takes seriously the possibility that Claude has moral status, although it was candid that it does not know whether that is so. 
+
+Still, the word chosen was welfare. Welfare is borrowed vocabulary. It belongs to beings that can be harmed, and it carries that implication even when it is hedged. The point is not that Anthropic claims its models are persons; it explicitly declines to. The point is that the implication of this ban is a psychological nudge on the users--making them see Claude as a more human-like entity than ever, since there is now a perceived moral responsibility towards the model they are using!
+
+Fiction in the statute book
+A century of storytelling has supplied the vocabulary we use for this technology. Čapek gave us the word robot in 1920. Asimov gave us laws for them. Everything from HAL to Skynet to Ava gave us the current AI doomsday plot: the machine acquires motives, and the motives turn against us.
+
+Legal scholars call the result the human paradigm — the habit of picturing AI as a discrete, embodied entity with desires, when the actual object of regulation is a disembodied statistical process running across rented infrastructure. Negativity bias does the rest. Dystopian stories travel further than optimistic ones, and exposure to them predicts measurable anxiety about autonomous systems.
+
+Be careful about the causal claim here. It is tempting, and mostly unprovable, to say that science fiction caused any particular law. Nonetheless, there is an inextricable link. When the European Parliament drafted its 2017 resolution on civil law rules for robotics, it cited Frankenstein, Čapek and Asimov's three laws in the text itself, and floated a status of electronic personhood for sophisticated autonomous machines. 
+
+The most accurate formulation for this is that fiction and regulation draw on the same anthropomorphic well. Both reach for agency, intent and their resultant causal chain because those are the concepts our minds supply when something complicated behaves unpredictably. Anthropomorphism is not simply limited to what makes people trust AI more— it also influences our perception of potential risks emerging from these tools. 
+
+What goes wrong
+We can estimate some consequences that emerge as anthropomorphism begins to shift human behavior at a macro scale:
+
+1. Responsibility goes missing. Once the system is an actor, it can be blamed. "The model hallucinated", "the agent decided", "the AI went rogue" — each formulation essentially relocates fault from a design decision to a non-existent will. Electronic personhood was the extreme expression of this, and it was rightly abandoned, but the softer version survives in how incidents are described and in how liability frameworks reach for autonomy as the main operative variable. Autonomy is a property of the story. Deployment, testing and disclosure are properties of a company. The story cannot be held liable, but the expressers of the story can. 
+2. Disclosure does not do the work asked of it. Transparency obligations — tell the user they are talking to a machine — are the default regulatory response, including under the EU AI Act. The ELIZA effect says this is close to useless on its own. People who know they are talking to software anthropomorphise it anyway. A rule that is satisfied by a one-line notice while the underlying design keeps doing its work is compliance theatre at best. 
+3. Consent gets harder to defend. Consent is supposed to be free, specific, informed and unambiguous. People disclose more, and more intimately, to systems that feel like confidants than to forms. A conversational interface that elicits personal data through something resembling rapport is obtaining that data under conditions the consent framework never contemplated. For children, where the Act demands verifiable parental consent, a system designed to feel like a friend is a structural problem, not an edge case. The opacity of what happens to this data makes the issue more complicated.
+4. Consumer protection has a gap. India's dark patterns guidelines address manipulative interface design — false urgency, confirm-shaming, drip pricing. It is not obvious that they reach persona, simulated affection, or engagement built on the appearance of a relationship. This regulatory gap may likely enable novel kinds of dark patterns as LLMs become increasingly powerful and capable. 
+
+However, regulating human-likeness directly is hard to draft. Conversational interfaces are more usable for people who struggle with menus and forms, and the boundary between accessible design and deceptive design is not clean. A clumsy rule here would ban good products along with manipulative ones.
+
+The answer is not to legislate against the bias. You cannot fix a cognitive default by statute, and the people saying "please" to their chatbots are not doing anything wrong. What can be regulated is the supply side: whether a system may claim feelings it does not have, how far simulated intimacy may be deployed against children, whether engagement metrics may be optimised through manufactured attachment, and — above all — whether the language of agency is allowed to stand in for an accountable party when something goes wrong. 
+
+There is no human in there. There is no feeling or emotion. There is a company, a dataset and a set of choices. Any rule that loses sight of that is regulating a character rather than a product.
