@@ -21,7 +21,7 @@ export default async function BlogPage({ searchParams }) {
     <>
       <PageHero
         icon={BookOpen}
-        title="Everything TMT, in full"
+        title="The Everything TMT Blog"
         scrollTo="blog-content"
         {...HEROES.blog}
         text={
