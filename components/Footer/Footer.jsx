@@ -13,8 +13,7 @@ export default function Footer() {
         <div>
           <div className={styles.logo}>Everything TMT</div>
           <p className={styles.tagline}>
-            Technology law, explained. A research platform covering privacy,
-            AI governance, cybersecurity and digital regulation.
+            A tech law and policy ecosystem.
           </p>
         </div>
         <div className={styles.columns}>
