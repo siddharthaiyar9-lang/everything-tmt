@@ -1,0 +1,129 @@
+.intro {
+  border: 1px solid var(--color-border);
+  background: var(--color-card);
+  border-radius: 12px;
+  padding: 20px 22px;
+  margin: 0 0 32px;
+}
+
+.kicker {
+  font-family: var(--font-brand), monospace;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 8px;
+}
+
+.seriesTitle {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  line-height: 1.2;
+  color: var(--color-text);
+  margin-bottom: 6px;
+}
+
+.seriesText {
+  font-family: var(--font-inter);
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--color-text-secondary);
+  margin: 0 0 14px;
+}
+
+.parts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.part,
+.partCurrent {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 6px 0 6px 12px;
+  border-left: 2px solid var(--color-border);
+}
+
+.part a {
+  color: var(--color-text-secondary);
+}
+
+.part a:hover {
+  color: var(--color-accent);
+}
+
+.partCurrent {
+  border-left-color: var(--color-accent);
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.soon {
+  font-family: var(--font-inter);
+  font-size: 12.5px;
+  color: var(--color-text-secondary);
+  margin-top: 12px;
+}
+
+.pager {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 56px;
+  padding-top: 28px;
+  border-top: 1px solid var(--color-border);
+}
+
+.pagerLink {
+  display: block;
+  border: 1px solid var(--color-border);
+  background: var(--color-card);
+  border-radius: 12px;
+  padding: 16px 18px;
+  text-decoration: none;
+  transition: border-color 0.15s ease;
+}
+
+.pagerLink:hover {
+  border-color: color-mix(in srgb, var(--color-accent) 40%, transparent);
+}
+
+.pagerNext {
+  text-align: right;
+}
+
+.pagerLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-brand), monospace;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 8px;
+}
+
+.pagerTitle {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 19px;
+  line-height: 1.25;
+  color: var(--color-text);
+}
+
+@media (max-width: 600px) {
+  .pager {
+    grid-template-columns: 1fr;
+  }
+  .pager > span {
+    display: none;
+  }
+  .pagerNext {
+    text-align: left;
+  }
+}
