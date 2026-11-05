@@ -4,7 +4,7 @@
 // picture stays visible when the screen is narrower than the image.
 export const HEROES = {
   home: {
-    image: 'heroes/taj.jpg',
+    image: 'heroes/home.jpg',
     imagePosition: '20% center', // keeps the Taj in view on phones and narrow windows
     gradient: 'linear-gradient(135deg, #0b3d3a, #2d9c8f)',
   },
