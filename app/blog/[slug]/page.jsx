@@ -5,13 +5,15 @@ import Image from 'next/image';
 import { Clock, Calendar, User, ChevronRight } from 'lucide-react';
 import remarkGfm from 'remark-gfm';
 import rehypeSlug from 'rehype-slug';
-import { getBlogPostBySlug, getAllBlogPosts } from '@/lib/blog';
+import { getBlogPostBySlug, getAllBlogPosts, getSeriesPosts } from '@/lib/blog';
 import { extractHeadings } from '@/lib/toc';
 import { SITE_AUTHOR } from '@/data/site';
 import { VERTICALS } from '@/data/verticals';
+import { SERIES } from '@/data/series';
 import { mdxComponents } from '@/components/mdx';
 import TableOfContents from '@/components/TableOfContents/TableOfContents';
 import ReadingProgress from '@/components/ReadingProgress/ReadingProgress';
+import { SeriesIntro, SeriesPager } from '@/components/SeriesNav/SeriesNav';
 import styles from './page.module.css';
 
 export function generateStaticParams() {
@@ -40,6 +42,14 @@ export default async function BlogPostPage({ params }) {
   const headings = extractHeadings(content);
   const isGuest = frontmatter.author && frontmatter.author !== SITE_AUTHOR;
   const verticalKeys = Array.isArray(frontmatter.verticals) ? frontmatter.verticals.filter((v) => VERTICALS[v]) : [];
+
+  // Series: previous and next parts, if this post belongs to a known series.
+  const seriesInfo = frontmatter.series ? SERIES[frontmatter.series] : null;
+  const seriesPosts = seriesInfo ? getSeriesPosts(frontmatter.series) : [];
+  const seriesIndex = seriesPosts.findIndex((p) => p.slug === slug);
+  const inSeries = seriesInfo && seriesIndex >= 0;
+  const previousPart = inSeries && seriesIndex > 0 ? seriesPosts[seriesIndex - 1] : null;
+  const nextPart = inSeries && seriesIndex < seriesPosts.length - 1 ? seriesPosts[seriesIndex + 1] : null;
 
   return (
     <div className={styles.page}>
@@ -77,9 +87,13 @@ export default async function BlogPostPage({ params }) {
             </span>
           </div>
 
+          {inSeries && <SeriesIntro series={seriesInfo} posts={seriesPosts} currentSlug={slug} />}
+
           <article id="article-content" className={styles.content}>
             <MDXRemote source={content} components={mdxComponents} options={{ mdxOptions: { remarkPlugins: [remarkGfm], rehypePlugins: [rehypeSlug] } }} />
           </article>
+
+          {inSeries && <SeriesPager previous={previousPart} next={nextPart} />}
         </div>
 
         <aside className={styles.sidebar}>
