@@ -19,6 +19,18 @@
   margin: 0 0 10px;
   line-height: 1.2;
 }
+.seriesTag {
+  display: inline-block;
+  font-family: var(--font-brand), monospace;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  border: 1px solid color-mix(in srgb, var(--color-accent) 30%, transparent);
+  border-radius: 999px;
+  padding: 3px 9px;
+}
 
 .excerpt {
   font-family: var(--font-inter);
