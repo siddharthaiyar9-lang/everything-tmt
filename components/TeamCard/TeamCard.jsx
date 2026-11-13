@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { ChevronDown, ArrowUpRight } from 'lucide-react';
 import styles from './TeamCard.module.css';
 
-// Closed: photo and position. Open: name, credentials, bio and links.
+// Closed: photo, name and position. Open: credentials, bio and links.
 // The links sit outside the button, because a link cannot live inside one.
 export default function TeamCard({ member }) {
   const [open, setOpen] = useState(false);
@@ -30,7 +30,10 @@ export default function TeamCard({ member }) {
           )}
         </div>
         <div className={styles.bar}>
-          <span className={styles.position}>{member.position}</span>
+          <span className={styles.text}>
+            <span className={styles.name}>{member.name}</span>
+            <span className={styles.position}>{member.position}</span>
+          </span>
           <ChevronDown size={18} className={styles.chevron} aria-hidden="true" />
         </div>
       </button>
@@ -38,7 +41,6 @@ export default function TeamCard({ member }) {
       <div id={panelId} className={styles.panel} inert={!open}>
         <div className={styles.panelInner}>
           <div className={styles.panelContent}>
-            <h3 className={styles.name}>{member.name}</h3>
             {member.credentials && <div className={styles.credentials}>{member.credentials}</div>}
             {member.about.map((paragraph, i) => (<p key={i} className={styles.about}>{paragraph}</p>))}
             {member.links && member.links.length > 0 && (
