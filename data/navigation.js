@@ -8,7 +8,7 @@ export const NAV_LINKS = [
   // { href: '/markets', label: 'Markets' }, // uncomment once Markets has a few pieces
   { href: '/podcast', label: 'Podcast' },
   { href: '/blog', label: 'Blog' },
-  { href: '/about', label: 'About' },
+  { href: '/team', label: 'Meet the Team' },
 ];
 
 // Direct links to the main tools, shown in the footer so they stay one
