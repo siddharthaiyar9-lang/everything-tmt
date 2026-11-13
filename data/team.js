@@ -12,7 +12,7 @@ export const TEAM = [
     photoPosition: 'center 28%', // keeps the face in frame when the photo is cropped
     about: [
       `I'm Siddharth Aiyar, a CIPP/E certified graduate from National Law University Odisha. I started reading about technology law out of pure curiosity, and quickly realised how complex, fragmented, and constantly evolving the space really is. What began as a niche academic interest slowly turned into a deeper engagement with how law interacts with the digital systems we use every day.`,
-      `Over the last few years, I've explored different corners of TMT law, from intermediary liability and digital privacy to media regulation and platform governance. I've interned with policy teams and legal organisations working in the tech space, and spent a fair amount of time trying to make sense of dense legislation, case law, and regulatory policy. That effort eventually shaped Everything TMT: a public-facing project aimed at breaking down the law in a way that's accessible but still legally rigorous.`,
+      `Over the last few years, I've explored different corners of TMT law, and that effort eventually shaped Everything TMT: a public-facing project aimed at breaking down the law in a way that's accessible but still legally rigorous.`,
     ],
     links: [
       { label: 'Email', href: 'mailto:siddharthaiyar9@gmail.com' },
