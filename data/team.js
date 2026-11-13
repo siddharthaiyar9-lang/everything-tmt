@@ -28,7 +28,9 @@ export const TEAM = [
     photoPosition: 'center 28%', // keeps the face in frame when the photo is cropped
     about: [
       "I am Tanishka Pandey, a lawyer and a 2025 graduate, with experience across contracts, regulatory advisory, and litigation. My work spans a broad range of legal and regulatory issues, while my interests lie particularly at the intersection of technology, law, and public policy.",
-      "I am a 2025 YLAC Policy in Action Fellow, and my interest in technology law stems from a strong conviction in the importance of digital rights, privacy, and individual autonomy in an increasingly technology-driven world. It is also, perhaps, a consequence of reading too much dystopian science fiction, which has only deepened my curiosity about the relationship between technology, power, and society. I am also a Project AWARE AI Safety Program Fellow, where I engage with questions surrounding international cooperation, AI governance, and the development of policy frameworks to address the challenges posed by artificial intelligence.",
+      "I am a 2025 YLAC Policy in Action Fellow, and my interest in technology law stems from a strong conviction in the importance of digital rights, privacy, and individual autonomy in an increasingly technology-driven world.",
+      "It is also, perhaps, a consequence of reading too much dystopian science fiction, which has only deepened my curiosity about the relationship between technology, power, and society.",
+      "I am also a Project AWARE AI Safety Program Fellow, where I engage with questions surrounding international cooperation, AI governance, and the development of policy frameworks to address the challenges posed by artificial intelligence.",
       "I am particularly interested in understanding how legal and institutional frameworks can keep pace with technological developments, and how we can shape a digital future that balances innovation with accountability, individual rights, and the public interest.",
       ],
   },
@@ -53,8 +55,9 @@ export const TEAM = [
     photoPosition: 'center 28%', // keeps the face in frame when the photo is cropped
     about: [
       "Hey there, I am Aarav Singh, I'm a second-year student pursuing a three-year LL.B. at Government Law College, Mumbai. I have a keen interest in Technology Law, Data Privacy, and Artificial Intelligence.",
-      "Outside academics, I enjoy staying active and exploring different interests. I like swimming, playing basketball and football, going to the gym, watching movies and listening to music. I'm also interested in chess and enjoy the strategic thinking involved in the game.",
-      "I'd describe myself as curious, introspective, and ambitious. I enjoy meaningful conversations, exploring new ideas, learning about different subjects, and challenging myself to step outside my comfort zone.",
+      "Outside academics, I enjoy staying active and exploring different interests. I like swimming, playing basketball and football, going to the gym, watching movies and listening to music.",
+      "I'm also interested in chess and enjoy the strategic thinking involved in the game.",
+      "I'd describe myself as curious, introspective, and ambitious; I enjoy meaningful conversations, exploring new ideas, learning about different subjects, and challenging myself to step outside my comfort zone.",
 ],
   },
    {
