@@ -67,7 +67,8 @@ export const TEAM = [
     about: [
       "I’m Priyanshi Gupta, a law student at National Law University, Jabalpur, with a focus on data privacy and technology law. I’ve spent much of my time studying India’s data protection regime, including consent managers, dark patterns and the places where domestic and global privacy frameworks disagree.",
       "My work spans research internships, moot courts, conference papers and publications in this domain. I also review and refine legal definitions for a legal literacy project, which is a good way to find out how many words law uses to avoid saying one clear thing."
-      "Outside the classroom, I chase ideas, places, and people that challenge my thinking, from books and science to strangers with good stories. I’ve also played the piano for the better part of a decade.",
+      "Outside the classroom, I chase ideas, places, and people that challenge my thinking, from books and science to strangers with good stories.",
+      "I’ve also played the piano for the better part of a decade.",
     ],
   },
   
