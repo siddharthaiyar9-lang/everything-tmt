@@ -4,7 +4,7 @@
 export const TEAM = [
   {
     id: 'siddharth-aiyar',
-    group: 'team',
+    group: 'founder',
     name: 'Siddharth Aiyar',
     position: 'Founder and Editor-in-Chief',
     photo: '/SiddharthAiyar_img.jpg',
@@ -21,7 +21,7 @@ export const TEAM = [
 
     {
     id: 'tanishka-pandey',
-    group: 'team',
+    group: 'research',
     name: 'Tanishka Pandey',
     position: 'Research Associate',
     photo: '/Tanishka.jpg',
@@ -34,7 +34,7 @@ export const TEAM = [
   },
   {
     id: 'trishna-agrawalla',
-    group: 'team',
+    group: 'research',
     name: 'Trishna Agrawalla',
     position: 'Research Associate',
     photo: '/Trishna.jpg',
@@ -46,7 +46,7 @@ export const TEAM = [
   },
    {
     id: 'aarav-singh',
-    group: 'team',
+    group: 'research',
     name: 'Aarav Singh',
     position: 'Research Associate',
     photo: '/Aarav.jpg',
@@ -59,7 +59,7 @@ export const TEAM = [
   },
    {
     id: 'priyanshi-gupta',
-    group: 'team',
+    group: 'research',
     name: 'Priyanshi Gupta',
     position: 'Research Associate',
     photo: '/Priyanshi.jpg',
@@ -88,6 +88,7 @@ export const TEAM = [
 // Order and headings of the groups. A heading only shows once more than
 // one group has people in it.
 export const GROUPS = [
-  { key: 'team', label: 'Team' },
+  { key: 'founder', label: 'Founder' },
+  { key: 'research', label: 'Research Associates' },
   { key: 'mentors', label: 'Mentors' },
 ];
