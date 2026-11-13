@@ -1,0 +1,50 @@
+.page {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 56px 24px 96px;
+  scroll-margin-top: 64px;
+}
+
+.groupTitle {
+  font-size: 30px;
+  color: var(--color-text);
+  margin: 56px 0 20px;
+}
+
+section:first-child > .groupTitle {
+  margin-top: 0;
+}
+
+/* align-items: start keeps the other cards the same height when one opens. */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  align-items: start;
+}
+
+.contact {
+  margin-top: 72px;
+  padding-top: 28px;
+  border-top: 1px solid var(--color-border);
+}
+
+.contactTitle {
+  font-size: 26px;
+  color: var(--color-text);
+  margin: 0 0 8px;
+}
+
+.contactText {
+  font-family: var(--font-inter);
+  font-size: 15px;
+  color: var(--color-text-secondary);
+  margin: 0 0 10px;
+}
+
+.contactLink {
+  font-family: var(--font-inter);
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--color-accent);
+}
