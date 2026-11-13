@@ -32,7 +32,6 @@ export default function TeamCard({ member }) {
         <div className={styles.bar}>
           <span className={styles.text}>
             <span className={styles.name}>{member.name}</span>
-            <span className={styles.position}>{member.position}</span>
           </span>
           <ChevronDown size={18} className={styles.chevron} aria-hidden="true" />
         </div>
