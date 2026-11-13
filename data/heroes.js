@@ -19,8 +19,8 @@ export const HEROES = {
     gradient: 'linear-gradient(135deg, #0f1b3d, #2d5bff)',
   },
   about: {
-    image: 'heroes/ghat.jpg',
-    imagePosition: 'left center', // keeps the dome in view on phones
+    image: 'heroes/Team.jpg',
+    imagePosition: '20% center', // keeps the dome in view on phones
     gradient: 'linear-gradient(135deg, #3a1c1c, #c26a3d)',
   },
 };
