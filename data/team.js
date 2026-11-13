@@ -78,6 +78,18 @@ export const TEAM = [
       `I’ve also played the piano for the better part of a decade.`,
     ],
   },
+  {
+    id: 'hemanta-baidya',
+    group: 'research',
+    name: 'Hemanta Baidya',
+    position: 'Research Associate',
+    photo: '/Hemanta.jpg',
+    photoPosition: 'center 28%',
+    about: [
+      "Hemanta Baidya is a third-year B.Sc. LL.B. (Hons.) student at the National Forensic Sciences University (NFSU), Gandhinagar, and is pursuing the CS Executive Programme. His academic interests include Corporate Law, Intellectual Property, Regulatory Compliance and Technology Policy.",
+      "He is particularly interested in exploring the intersection of law, emerging technologies and corporate governance, with a growing focus on AI regulation and governance in India.",
+    ],
+  },
 
   // To add someone, copy a block above and change the details. Group is
   // 'research' for Research Associates or 'mentors' for Mentors. Optional
