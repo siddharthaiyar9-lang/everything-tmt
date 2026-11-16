@@ -91,6 +91,20 @@ export const TEAM = [
     ],
   },
 
+   {
+    id: 'tanush-mehrotra',
+    group: 'research',
+    name: 'Tanush Mehrotra',
+    position: 'Research Associate',
+    photo: '/Tanush.jpg',
+    photoPosition: 'center 35%',
+    about: [
+     "Hi everyone, I'm Tanush, a fourth-year B.A. LL.B. (Hons.) student at NUJS, Kolkata.",
+      "My interest in tech law stems largely from developments in artificial intelligence, as well as the philosophical questions surrounding the nature of AI. Most of my internship experience has been in securities and financial regulation, but I have also worked on research in data protection and AI governance.",
+      "Outside of law, I enjoy badminton, chess, and spending more time on YouTube than I would like to admit!"
+      ],
+  },
+
   // To add someone, copy a block above and change the details. Group is
   // 'research' for Research Associates or 'mentors' for Mentors. Optional
   // lines: credentials: 'text under the name', and
