@@ -104,6 +104,20 @@ export const TEAM = [
       "Outside of law, I enjoy badminton, chess, and spending more time on YouTube than I would like to admit!"
       ],
   },
+   {
+    id: 'varun-partibhan',
+    group: 'research',
+    name: 'Varun P',
+    position: 'Research Associate',
+    photo: '/Varun.jpg',
+    photoPosition: 'center 28%',
+    about: [
+      "I’m a Technology and Data Protection Lawyer, where I help technology businesses make sense of data protection and digital regulation.",
+      "Much of my work involves turning legal obligations into practical compliance steps, through gap assessments, privacy policies, data-flow mapping and advisory notes.",
+      "I grew up alongside the internet and have always been drawn to gaming and the way digital culture keeps changing, from how people play and connect online to how platforms collect and use their data.",
+      "Those interests are what led me into the tech policy space, where I get to work on the rules shaping the digital world I grew up in.",
+     ],
+  },
 
   // To add someone, copy a block above and change the details. Group is
   // 'research' for Research Associates or 'mentors' for Mentors. Optional
