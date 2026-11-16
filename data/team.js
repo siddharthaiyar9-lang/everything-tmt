@@ -109,7 +109,7 @@ export const TEAM = [
     group: 'research',
     name: 'Varun P',
     position: 'Research Associate',
-    photo: '/Varun.jpg',
+    photo: '/Varun.jpeg',
     photoPosition: 'center 28%',
     about: [
       "I’m a Technology and Data Protection Lawyer, where I help technology businesses make sense of data protection and digital regulation.",
