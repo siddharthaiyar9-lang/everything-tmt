@@ -97,7 +97,7 @@ export const TEAM = [
     name: 'Tanush Mehrotra',
     position: 'Research Associate',
     photo: '/Tanush.jpg',
-    photoPosition: 'center 35%',
+    photoPosition: 'center 40%',
     about: [
      "Hi everyone, I'm Tanush, a fourth-year B.A. LL.B. (Hons.) student at NUJS, Kolkata.",
       "My interest in tech law stems largely from developments in artificial intelligence, as well as the philosophical questions surrounding the nature of AI. Most of my internship experience has been in securities and financial regulation, but I have also worked on research in data protection and AI governance.",
