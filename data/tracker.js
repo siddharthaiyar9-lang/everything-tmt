@@ -942,4 +942,23 @@ export const trackerEntries = [
     ],
     source: null,
   },
+  {
+    id: "data-empowerment-protection-architecture",
+    title: "Data Empowerment and Protection Architecture for AI Training",
+    regulator: "MeitY",
+    status: "Recommendation / Report",
+    policyArea: "Data",
+    date: "2026-10-31",
+    dateLabel: "Oct 2026",
+    summary:
+      "Organisations have vast datasets, which indigenous AI developers need for AI training. However, these organisations are reluctant to share these datasets. The DEPA for AI Training looks to create a collaborative system based on trust and access to data to solve this deadlock.",
+    keyPoints: [
+      "India has vast datasets, but maximising potential for AI training requires that organisations share these datasets. They do not do so for four primary reasons: (1) Privacy risks; (2) Commercial risks; (3) Lack of trusted frameworks for data sharing, and; (4) Lack of economic incentives to share data.",
+      "India's current DEPA is made for Inference - i.e., the focus is consent based sharing of an individual's personal data, as opposed to sharing of large datasets, which is what AI training requires.",
+      "This DEPA proposes a framework involving Data Providers, Data Consumers and Data Collaboratives to bridge existing data silos and enable access to datasets for AI training.",
+      "The framework proposes three principal categories of participants: Training Data Providers (such as hospitals, banks and public agencies), Training Data Consumers (such as research institutions, startups and enterprises), and Data Collaboratives. Data Collaboratives would act as intermediaries, bringing together datasets from multiple providers within a sector, and providing services such as data curation, standardisation, authentication and access management.",
+      "The framework proposes the use of Data Exchange Platforms and Secure Data Environments, within which authorised AI developers can train models without directly accessing or receiving raw datasets. It also envisages safeguards such as de-identification, Differential Privacy, encryption and electronic data-sharing contracts to manage privacy, security and permitted uses of data.",
+      "By enabling the combination of datasets that would otherwise remain inaccessible or disconnected, the framework seeks to support the development of AI models using richer, more representative and India-specific data.",
+      ],
+    source: "https://www.meity.gov.in/static/uploads/2026/10/02d8224e4cd6c8c29be5a5198e795158.pdf" 
 ];
