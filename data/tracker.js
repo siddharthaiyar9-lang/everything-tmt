@@ -961,4 +961,5 @@ export const trackerEntries = [
       "By enabling the combination of datasets that would otherwise remain inaccessible or disconnected, the framework seeks to support the development of AI models using richer, more representative and India-specific data.",
       ],
     source: "https://www.meity.gov.in/static/uploads/2026/10/02d8224e4cd6c8c29be5a5198e795158.pdf" 
+  },
 ];
